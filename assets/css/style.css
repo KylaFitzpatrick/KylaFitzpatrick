@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    background: blue;
+    color: white;
+  }
+  #navbar{
+    font-size: 20px;
+    font-family: sans-serif;
+    height:100%;
+   width: 175%;
+    display: flex-end;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+  }
+  #navbar li a{
+    text-decoration: none;
+    color: white;
+  }
+  #navbar li{
+    padding: 10px;
+    list-style-type: none;
+    display: inline-block;
+  }
+  #welcome-section{
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+    display: block;
+    height: 100vh;
+    min-height:100px;
+  }
+  h1{
+    padding-top: 300px;
+  }
+  @media (max-height: 100%)
+  {
+      #welcome-section
+    }
+  
+  p{
+      color: white;
+      text-decoration: none;
+      
+    }
+   .img-project{
+     height: calc(100% - 6.8rem);
+    width: 25%;
+    object-fit: cover;
+    }
