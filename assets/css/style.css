@@ -1,11 +1,34 @@
+* {
+    box-sizing:border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body{
     text-align: center;
-    /* background:white; */
     background-image:url("../images/ep_naturalwhite.png");
     color: black;
-    font-family:'Georgia', Times, 'Times New Roman', serif;
+    /* font-family:'Georgia', Times, 'Times New Roman', serif; */
+    font:15px/1.5 'Georgia', Times, 'Times New Roman', serif;
+    background-color:#ffffff;  
+    border-color:#dddddd;
+    background-image:url("../images/ep_naturalwhite.png");
+    background-repeat:repeat;
+    margin:auto;
+    padding-bottom: 50px;
 
   }
+  .container{
+    margin:auto;
+    background-color:rgba(255, 255, 255, 0.5);
+    overflow:auto;
+    align-items: center;
+    width:960px;
+    padding:0;  
+}
   .navbar-nav a li{
       position: fixed;
   }
@@ -33,6 +56,31 @@ h1{
 }
 h2{
     text-align: center;
+}
+img{
+    width:30%;
+    height:30%;
+    float:left;
+    margin-right:20px;
+}
+.clearfix{
+    overflow:auto;
+}
+/* index.html */
+#about-me-section{
+    margin-top:40px;
+    margin-bottom:10px;
+    background-position: center;
+    text-align: left;
+    float:center;
+    padding-bottom:40px;
+}
+#about-me{
+    margin:30px;
+}
+#about-image-info{
+    margin:30px;
+    line-height:1.9;
 }
 /* portfolio.html */
 #portfolio-section .container {
@@ -124,3 +172,42 @@ h2{
     width: 25%;
     object-fit: cover;
     }
+    /* contact.html */
+#contact-form-section{
+    margin-top:40px;
+    margin-bottom:10px;
+    background-position: center;
+    text-align: left;
+    float:center;
+    padding-bottom: 40px;
+}
+#contact{
+    margin:30px;
+}
+#contact-form{
+    margin:30px;
+}
+.contact-button{
+    display: block;
+    width: 80px;
+    height: 30px;
+    font:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color:#ffffff;
+    background-color: #4aaaa5;
+  }
+  .contact-button:hover{
+    color:#4aaaa5;
+    background-color:#ffffff;
+    border-color: #4aaaa5;
+  }
+input{
+    width:100%;
+    margin-bottom: 5px;
+    /* height: 20px; */
+}
+
+textarea{
+    width: 100%;
+    height: 300px;
+    border-color: #cccccc;
+}
