@@ -1,22 +1,14 @@
 body{
     text-align: center;
-    background:white;
+    /* background:white; */
+    background-image:url("../images/ep_naturalwhite.png");
     color: black;
+    font-family:'Georgia', Times, 'Times New Roman', serif;
+
   }
-  /* #welcome-section{
-      background: blue;
-  } */
-  /* .navbar-nav{
-    font-size: 20px;
-    font-family: sans-serif;
-    height:100%;
-   width: 175%;
-    display: flex-end;
-    position: fixed;
-    top: 0;
-    padding: 20px;
-    color: red
-  } */
+  .navbar-nav a li{
+      position: fixed;
+  }
   .navbar-nav a{
     text-decoration: none;
     color: white;
@@ -29,10 +21,83 @@ body{
  .jumbotron{
     text-align: center;
     display: block;
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    background-color: rgba(74,170,165, 0.5);
+    /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
     color:black;
+    font-weight: bold;
+    
   }
+h1{
+    font-size: 80px;
+}
+h2{
+    text-align: center;
+}
+/* portfolio.html */
+#portfolio-section .container {
+    overflow: hidden;
+} 
+#portfolio-section{
+    background-position: center;
+    text-align: left;
+    float:center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
 
+}
+#portfolio{
+    margin:30px;
+}
+#portfolio-image-info{
+    margin:30px;
+
+}
+.portfolio-image{
+    float: left;
+    width:40%;
+    height:30%; 
+    position: relative;
+    margin-bottom:50px;
+    margin-right:-20px;
+
+} 
+.portfolio-image img{
+    float:  left;
+    width:300px;
+    height:200px;
+    margin:0px;
+}
+.portfolio-image .position-text a{
+    overflow:hidden;
+    text-align:center;
+    background-color:rgba(74,170,165, 0.5);
+    font-family:'Georgia', Times, 'Times New Roman', serif;
+    color:#ffffff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-18.65%, 30%);
+    width:300px;
+    padding:20px 0px 20px 0px;
+    font-size: 20px;
+    margin:0;
+}
+
+.portfolio-image .position-text a:hover{
+    color:#4aaaa5;
+    background-color:#ffffff;
+    font-family:'Georgia', Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+  .row{
+      margin-left: 10px;
+  }
    .img-project{
      height: calc(100% - 6.8rem);
     width: 25%;

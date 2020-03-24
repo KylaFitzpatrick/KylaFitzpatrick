@@ -6,65 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Chicle&display=swap" rel="stylesheet">
     <title>Kyla Fitzpatrick's Portfolio</title>
 </head>
 
 <body>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#welcome-section"> About
-                        </a>
-                        <a class="nav-item nav-link" href="#experience"> Experience
-                        </a>
-                        <a class="nav-item nav-link" href="#projects"> Work
-                        </a>
-                        <a class="nav-item nav-link" href="#contact"> Contact
-                        </a>
-                </div>
-            </div>
-        </nav>
-        <div class="jumbotron jumbotron-fluid">
-            <!-- <div class="container"> -->
-                <div id="welcome-section">
-                    <h1 class="display-4">Welcome to my portfolio page</h1>
-                </div>
-            <!-- </div> -->
-        </div>
-        <div id="experience">
-            <h2>Here is some of my experience</h2>
-        </div>
-        <section id="projects">
-            <h2 class="projects-section">Below are some of my projects</h2>
-            <div class="grid-projects">
-                <a class="project-tile" target="_blank" href="">
-                    <img class="img-project" src="" />
-                    <p class="project-title"></p>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#welcome-section"> About
                 </a>
-                <a class="project-tile" target="_blank" href=""><img class="img-project" src="" />
-                    <p class="project-title"></p>
+                <a class="nav-item nav-link" href="#experience"> Experience
                 </a>
-                <a class="project-tile" id="profile-link" target="_blank" href=""><img class="img-project" src="" />
-                    <p class="project-title"></p>
+                <a class="nav-item nav-link" href="#portfolio-section"> Work
                 </a>
-                <a class="project-tile" target="_blank" href=""><img class="img-project" src="">
-                    <p class="project-title"></p>
+                <a class="nav-item nav-link" href="#contact"> Contact
                 </a>
             </div>
-        </section>
-        <div id="contact">
-            <h1>Contact</h1>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div id="welcome-section">
+            <h1>Welcome to my portfolio page</h1>
+        </div>
+    </div>
+    <div id="experience">
+        <h2>Here is some of my experience</h2>
+        <p>Click to view or download a resume, simply click on the picture [Resume is in .PDF format]</p>
+        <a href="resume.pdf" title="Download My Resume"><img style="width: XXpx; height: YYpx; border: 0;"
+                src="pdf_image.png" alt="My Resume" /></a>
+    </div> 
+    <section id="portfolio-section">
+        <div class="container">
+            <div id="portfolio">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="row">
+                <div class="column-md-6">
+                    <div id="portfolio-image-info">
+                        <div class="portfolio-image">
+                            <img id="hamgman" src="assets/images/lotus.jpg" alt="word-guess-game" class="responsive">
+                            <div class="position-text"><a target="_blank"
+                                    href="https://kylafitzpatrick.github.io/Word-Guess-Game/">Hangman</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-md-6">
+                        <div id="portfolio-image-info">
+                            <div class="portfolio-image">
+                                <img id="hamgman" src="assets/images/lotus.jpg" alt="project1" class="responsive">
+                                <div class="position-text"><a target="_blank"
+                                        href="https://jwellstx.github.io/Project1/">Project 1</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-md-6">
+                    <div id="portfolio-image-info">
+                        <div class="portfolio-image">
+                            <img id="rutgers-info-widget" src="assets/images/river.jpg" alt="giftastic"
+                                class="responsive">
+                            <div class="position-text"><a target="_blank"
+                                    href="https://kylafitzpatrick.github.io/GifTastic/">GifTastic Deployed</a></div>
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://github.com/KylaFitzpatrick/GifTastic">GifTastic Repo</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div id="contact">
+        <h2>Contact</h2>
+        <p>Please contact me at kfitzpatrick44@gmail.com or 704-748-3653. Also, please feel free to contact me on
+            linkedin via the link provided below.</p>
+        <a class="project-tile" target="_blank" href="https://www.linkedin.com/in/kylaannefitzpatrick/">Linkedin</a>
+        <a class="project-tile" target="_blank" href="https://github.com/KylaFitzpatrick">Github</a>
 
-        </div>
-    </body>
-    <footer>
-        <span> &copy; Copyright 2020, Kyla Fitzpatrick's Portfolio</span>
-      </footer>
+    </div>
+</body>
+<footer>
+    <span> &copy; Copyright 2020, Kyla Fitzpatrick's Portfolio</span>
+</footer>
+
 </html>
