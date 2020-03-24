@@ -192,15 +192,14 @@ img{
 #contact-form{
     margin:30px;
 }
-.contact-button{
+button{
     display: block;
-    width: 80px;
-    height: 30px;
     font:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color:#ffffff;
     background-color: #4aaaa5;
+    margin: -15px;
   }
-  .contact-button:hover{
+  .col-auto .my-1:hover{
     color:#4aaaa5;
     background-color:#ffffff;
     border-color: #4aaaa5;
