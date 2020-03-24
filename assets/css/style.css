@@ -77,20 +77,40 @@ h2{
     position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-18.65%, 30%);
+    transform: translate(-18.65%, 0%);
     width:300px;
     padding:20px 0px 20px 0px;
     font-size: 20px;
     margin:0;
 }
+.portfolio-image .repo a{
+    overflow:hidden;
+    text-align:center;
+    background-color:rgba(74,170,165, 0.5);
+    font-family:'Georgia', Times, 'Times New Roman', serif;
+    color:#ffffff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-18.65%, 100%);
+    width:300px;
+    padding:20px 0px 20px 0px;
+    font-size: 20px;
+    margin:0;
 
+}
 .portfolio-image .position-text a:hover{
     color:#4aaaa5;
     background-color:#ffffff;
     font-family:'Georgia', Times, 'Times New Roman', serif;
     text-decoration: none;
 }
-
+.portfolio-image .repo a:hover{
+    color:#4aaaa5;
+    background-color:#ffffff;
+    font-family:'Georgia', Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
 .responsive {
     width: 100%;
     height: auto;
