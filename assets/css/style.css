@@ -1,9 +1,12 @@
 body{
     text-align: center;
-    background: blue;
-    color: white;
+    background:white;
+    color: black;
   }
-  #navbar{
+  /* #welcome-section{
+      background: blue;
+  } */
+  /* .navbar-nav{
     font-size: 20px;
     font-family: sans-serif;
     height:100%;
@@ -12,37 +15,24 @@ body{
     position: fixed;
     top: 0;
     padding: 20px;
-  }
-  #navbar li a{
+    color: red
+  } */
+  .navbar-nav a{
     text-decoration: none;
     color: white;
   }
-  #navbar li{
+  .navbar-nav li{
     padding: 10px;
     list-style-type: none;
     display: inline-block;
   }
-  #welcome-section{
+ .jumbotron{
     text-align: center;
-    padding-top: 0px;
-    margin-top: 0px;
     display: block;
-    height: 100vh;
-    min-height:100px;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    color:black;
   }
-  h1{
-    padding-top: 300px;
-  }
-  @media (max-height: 100%)
-  {
-      #welcome-section
-    }
-  
-  p{
-      color: white;
-      text-decoration: none;
-      
-    }
+
    .img-project{
      height: calc(100% - 6.8rem);
     width: 25%;
