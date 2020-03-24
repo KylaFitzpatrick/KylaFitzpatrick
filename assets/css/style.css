@@ -82,6 +82,11 @@ img{
     margin:30px;
     line-height:1.9;
 }
+#experience{
+    margin:30px;
+    line-height:1.9;
+    text-align: left;
+}
 /* portfolio.html */
 #portfolio-section .container {
     overflow: hidden;
