@@ -96,12 +96,12 @@ img{
     text-align: left;
     float:center;
     margin-top: 40px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     overflow: hidden;
 
 }
 #portfolio{
-    margin:30px;
+    margin-top:30px;
 }
 #portfolio-image-info{
     margin:30px;
@@ -131,7 +131,7 @@ img{
     position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-18.65%, 0%);
+    transform: translate(-18.65%, -50%);
     width:300px;
     padding:20px 0px 20px 0px;
     font-size: 20px;
@@ -146,13 +146,13 @@ img{
     position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-18.65%, 100%);
+    transform: translate(-18.65%, 150%);
     width:300px;
     padding:20px 0px 20px 0px;
     font-size: 20px;
-    margin:0;
-
+    margin:0px;
 }
+
 .portfolio-image .position-text a:hover{
     color:#4aaaa5;
     background-color:#ffffff;
@@ -171,6 +171,7 @@ img{
   }
   .row{
       margin-left: 10px;
+      margin-bottom:40px;
   }
    .img-project{
      height: calc(100% - 6.8rem);
