@@ -12,7 +12,7 @@ body{
     background-image:url("../images/ep_naturalwhite.png");
     color: black;
     font:18px/1.5 'Georgia', Times, 'Times New Roman', serif;
-    background-color:#ffffff;  
+    /* background-color:#ffffff;   */
     border-color:#dddddd;
     background-image:url("../images/ep_naturalwhite.png");
     background-repeat:repeat;
@@ -54,7 +54,9 @@ h1{
     padding-top: 50px;
 }
 h2{
+    padding-top: 20px;
     text-align: center;
+    font-weight: bold;
 }
 img{
     width:30%;
@@ -80,11 +82,16 @@ img{
 #about-image-info{
     margin:30px;
     line-height:1.9;
+    padding-bottom: 20px;
 }
 #experience{
     margin:30px;
+}
+#experience-info{
+    margin:30px;
     line-height:1.9;
     text-align: left;
+    padding-bottom: 20px;
 }
 /* portfolio.html */
 #portfolio-section .container {
@@ -95,7 +102,6 @@ img{
     text-align: left;
     float:center;
     margin-top: 40px;
-    /* padding-bottom: 40px; */
     overflow: hidden;
 
 }
@@ -114,7 +120,6 @@ img{
     position: relative;
     margin-bottom:50px;
     margin-right:-20px;
-    /* margin-left: -5px; */
 
 } 
 .portfolio-image img{
@@ -174,11 +179,7 @@ img{
       margin-left: 10px;
       margin-bottom:60px;
   }
-   .img-project{
-     height: calc(100% - 6.8rem);
-    width: 25%;
-    object-fit: cover;
-    }
+  
     /* contact.html */
 #contact-form-section{
     margin-top:40px;
@@ -217,3 +218,13 @@ textarea{
     height: 300px;
     border-color: #cccccc;
 }
+@media only screen and (max-width: 575px) {
+    .container {
+      width:100%;
+    }
+    .row{
+        justify-content: center;
+        text-align: center;
+        margin-left:-30px;
+    }
+  }
