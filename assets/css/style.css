@@ -22,7 +22,7 @@ body{
   }
   .container{
     margin:auto;
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color:rgba(255, 255, 255, 0.8);
     overflow:auto;
     align-items: center;
     width:960px;
@@ -39,7 +39,7 @@ body{
  .jumbotron{
     text-align: center;
     display: block;
-    background-color: rgba(74,170,165, 0.5);
+    background-color: rgba(74,170,165, 0.8);
     color:black;
     font-weight: bold;
   }
@@ -118,7 +118,7 @@ img{
 .portfolio-image .position-text a{
     overflow:hidden;
     text-align:center;
-    background-color:rgba(74,170,165, 0.5);
+    background-color:rgba(74,170,165, 0.8);
     font-family:'Georgia', Times, 'Times New Roman', serif;
     color:#ffffff;
     position:absolute;
@@ -133,7 +133,7 @@ img{
 .portfolio-image .repo a{
     overflow:hidden;
     text-align:center;
-    background-color:rgba(74,170,165, 0.5);
+    background-color:rgba(74,170,165, 0.8);
     font-family:'Georgia', Times, 'Times New Roman', serif;
     color:#ffffff;
     position:absolute;
@@ -190,7 +190,7 @@ img{
     display: block;
     font:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color:#ffffff;
-    background-color: #4aaaa5;
+    background-color: rgba(74,170,165, 0.8);
     margin-left: -15px;
   }
   .col-auto .my-1:hover{
