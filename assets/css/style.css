@@ -25,13 +25,15 @@ body{
     background-color:rgba(255, 255, 255, 0.8);
     overflow:auto;
     align-items: center;
-    width:1040px;
+    width:1060px;
     padding:0;  
+    display: block;
 }
   .navbar{
       position: fixed;
         width:100%;
       background-color: rgba(74,170,165);
+      z-index: 99999;
       /* background-color: white;  */
 
   }
@@ -102,6 +104,7 @@ img{
 }
 #portfolio-image-info{
     margin:30px;
+    justify-content: center;
 
 }
 .portfolio-image{
@@ -111,6 +114,7 @@ img{
     position: relative;
     margin-bottom:50px;
     margin-right:-20px;
+    /* margin-left: -5px; */
 
 } 
 .portfolio-image img{
@@ -168,7 +172,7 @@ img{
   }
   .row{
       margin-left: 10px;
-      margin-bottom:40px;
+      margin-bottom:60px;
   }
    .img-project{
      height: calc(100% - 6.8rem);
