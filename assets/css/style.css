@@ -196,7 +196,6 @@ img{
     margin:30px;
 }
 .btn {
-    display: block;
     font:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color:#ffffff;
     background-color: rgba(74,170,165, 0.8);
