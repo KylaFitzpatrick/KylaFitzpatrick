@@ -57,12 +57,18 @@ h2{
     padding-top: 20px;
     text-align: center;
     font-weight: bold;
+    font-size: 30px;
+    color: rgba(74,170,165);
+    text-decoration: underline;
 }
 img{
-    width:30%;
-    height:30%;
+    width:380px;
+    height:380px;
+    /* width:50%;
+    height:50%; */
     float:left;
     margin-right:20px;
+    padding-bottom: 30px;
 }
 .clearfix{
     overflow:auto;
@@ -225,5 +231,9 @@ textarea{
         justify-content: center;
         text-align: center;
         margin-left:-30px;
+    }
+    img{
+        width: 100%;
+        margin-bottom: 10px;
     }
   }
