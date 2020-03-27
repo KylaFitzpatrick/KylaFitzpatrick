@@ -28,14 +28,15 @@ body{
     padding:0;  
     display: block;
 }
-  .navbar{
-      position: fixed;
-        width:100%;
-      background-color: rgba(74,170,165);
-      z-index: 99999;
-      color: rgba(255,255,255, 0.6);
+ .navbar-light{
+    position: fixed;
+    width:100%;
+    background-color: rgba(74,170,165);
+    z-index: 99999;
+    color: black;
 
   }
+
 
  .jumbotron{
     text-align: center;
