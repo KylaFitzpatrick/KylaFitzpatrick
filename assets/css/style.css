@@ -33,10 +33,19 @@ body{
     width:100%;
     background-color: rgba(74,170,165);
     z-index: 99999;
-    color: black;
+    color: white;
 
   }
+  .custom-toggler.navbar-toggler { 
+    border-color: white; 
+}
+  .custom-toggler .navbar-toggler-icon{ 
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 
+  }
+  .nav-link{
+    color:white !important;
+}
 
  .jumbotron{
     text-align: center;
@@ -96,6 +105,10 @@ a{
     line-height:1.9;
     text-align: left;
     padding-bottom: 20px;
+}
+.project-link{
+    font-size: 18px; 
+    color: rgba(74,170,165, 0.8);
 }
 /* portfolio.html */
 #portfolio-section .container {
