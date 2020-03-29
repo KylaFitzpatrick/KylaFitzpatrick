@@ -128,6 +128,8 @@ a{
 #portfolio-image-info{
     margin:30px;
     justify-content: center;
+    
+
 
 }
 .portfolio-image{
@@ -144,11 +146,16 @@ a{
     width:300px;
     height:200px;
     margin:0px;
+    background-color:rgba(255,255,255);
+    opacity: 0.60;
+    -moz-opacity: 60%;
+    -webkit-opacity: 60%;
+    position:relative;
 }
 .portfolio-image .position-text a{
     overflow:hidden;
     text-align:center;
-    background-color:rgba(74,170,165, 0.8);
+    background-color:rgba(74,170,165);
     font-family:'Georgia', Times, 'Times New Roman', serif;
     color:#ffffff;
     position:absolute;
@@ -159,11 +166,12 @@ a{
     padding:20px 0px 20px 0px;
     font-size: 20px;
     margin:0;
+    transition: 0.3s;
 }
 .portfolio-image .repo a{
     overflow:hidden;
     text-align:center;
-    background-color:rgba(74,170,165, 0.8);
+    background-color:rgba(74,170,165);
     font-family:'Georgia', Times, 'Times New Roman', serif;
     color:#ffffff;
     position:absolute;
@@ -174,6 +182,7 @@ a{
     padding:20px 0px 20px 0px;
     font-size: 20px;
     margin:0px;
+    transition: 0.3s;
 }
 
 .portfolio-image .position-text a:hover{
@@ -181,12 +190,14 @@ a{
     background-color:#ffffff;
     font-family:'Georgia', Times, 'Times New Roman', serif;
     text-decoration: none;
+    transition: 0.3s;
 }
 .portfolio-image .repo a:hover{
     color:#4aaaa5;
     background-color:#ffffff;
     font-family:'Georgia', Times, 'Times New Roman', serif;
     text-decoration: none;
+    transition: 0.3s;
 }
 .responsive {
     width: 100%;
