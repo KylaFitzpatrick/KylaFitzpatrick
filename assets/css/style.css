@@ -113,6 +113,7 @@ a{
 /* portfolio.html */
 #portfolio-section .container {
     overflow: hidden;
+    padding-bottom: 30px;
 } 
 #portfolio-section{
     background-position: center;
@@ -120,6 +121,7 @@ a{
     float:center;
     margin-top: 40px;
     overflow: hidden;
+    justify-content: center;
 
 }
 #portfolio{
@@ -128,16 +130,13 @@ a{
 #portfolio-image-info{
     margin:30px;
     justify-content: center;
-    
-
-
 }
 .portfolio-image{
     float: left;
     width:40%;
     height:30%; 
     position: relative;
-    margin-bottom:50px;
+    margin-bottom:20px;
     margin-right:-20px;
 
 } 
@@ -163,7 +162,7 @@ a{
     left: 50%;
     transform: translate(-18.65%, -50%);
     width:300px;
-    padding:20px 0px 20px 0px;
+    padding:10px 0px 10px 0px;
     font-size: 20px;
     margin:0;
     transition: 0.3s;
@@ -179,7 +178,7 @@ a{
     left: 50%;
     transform: translate(-18.65%, 100%);
     width:300px;
-    padding:20px 0px 20px 0px;
+    padding:10px 0px 10px 0px;
     font-size: 20px;
     margin:0px;
     transition: 0.3s;
@@ -205,7 +204,7 @@ a{
   }
   .row{
       margin-left: 10px;
-      margin-bottom:60px;
+      /* margin-bottom:50px; */
   }
   
     /* contact.html */
