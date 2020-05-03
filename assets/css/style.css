@@ -133,73 +133,10 @@ a{
 #portfolio{
     margin-top:30px;
 }
-#portfolio-image-info{
-    margin-top:30px;
-    justify-content: center;
-}
-.portfolio-image{
-    /* float: left;
-    width:40%;
-    height:30%;  */
-    position: relative;
-
-} 
-.portfolio-image img{
-    float:  left;
-    width:100%;
-    /* width:300px; */
-    height:200px;
-    border-color: white;
-    border-width: 5px;
-    margin:0px;
-    opacity: 0.60;
-    -moz-opacity: 60%;
-    -webkit-opacity: 60%;
-    position:relative;
-}
-.portfolio-image .position-text a{
-    overflow:hidden;
-    text-align:center;
-    background-color:#ffffff;
-    color: rgba(74,170,165);
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 150%);
-    width:100%;
-    padding:10px 0px 10px 0px;
-    font-size: 20px;
-    margin:0;
-    transition: 0.3s;
-}
-.portfolio-image .repo a{
-    overflow:hidden;
-    text-align:center;
-    background-color: #ffffff;
-    color: rgba(74,170,165);
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 300%);
-    width:100%;
-    padding:10px 0px 10px 0px;
-    font-size: 20px;
-    margin:0px;
-    transition: 0.3s;
+.card{
+    margin-bottom:20px;
 }
 
-.portfolio-image .position-text a:hover{
-    color: #ffffff;
-    background-color: #4aaaa5;
-    text-decoration: none;
-    transition: 0.3s;
-}
-.portfolio-image .repo a:hover{
-    color: #ffffff;
-    background-color: #4aaaa5;
-    text-decoration: none;
-    transition: 0.3s;
-}
 .responsive {
     width: 100%;
     height: 100%;
@@ -248,14 +185,31 @@ textarea{
     height: 300px;
     border-color: #cccccc;
 }
-
+.contact-info{
+    text-align: center;
+    margin-top: 100px;
+}
 footer{
     background-color:rgba(74,170,165, 0.8);
     margin-bottom: -50px;
     height: 50px;
     padding-top: 15px;
 }
-
+@media only screen and (max-width: 991px) {
+    .container {
+       
+            width:100%;
+          
+    }
+    .card{
+        justify-content: center;
+        text-align: center;
+        width:100%;
+        display: flex;
+        margin-bottom: 20px;
+        
+    }
+}
 @media only screen and (max-width: 767px) {
     .container {
       width:100%;
@@ -266,7 +220,7 @@ footer{
     }
     img{
         width: 100%;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         height:100%;
     }
   }
