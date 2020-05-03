@@ -101,15 +101,6 @@ a{
     margin-right: 20px;
     display: inline;
 }
-#experience{
-    margin:30px;
-}
-#experience-info{
-    margin:30px;
-    line-height:1.9;
-    text-align: left;
-    padding-bottom: 20px;
-}
 .project-link{
     font-size: 20px; 
     color: white;
@@ -218,6 +209,9 @@ footer{
     .container {
       width:100%;
     }
+    .links{
+        margin-bottom: 40px;
+    }
     .row{
         justify-content: center;
         text-align: center;
@@ -230,7 +224,6 @@ footer{
     .contact-info{
         text-align: center;
         margin-top: 20px;
-        padding-bottom:40px;
     }
     img{
         width: 100%;
