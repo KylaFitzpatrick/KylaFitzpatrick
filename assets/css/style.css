@@ -1,5 +1,6 @@
 * {
     box-sizing:border-box;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -9,26 +10,21 @@ html {
 
 body{
     text-align: center;
-    background-image:url("../images/ep_naturalwhite.png");
-    color: black;
-    font:18px/1.5 'Georgia', Times, 'Times New Roman', serif;
+    background-image: linear-gradient(to bottom right, rgba(74,170,165), white);
+    color: white;
+    font:20px/1.5 'Georgia', Times, 'Times New Roman', serif;
     border-color:#dddddd;
-    background-image:url("../images/ep_naturalwhite.png");
-    background-repeat:repeat;
-    margin:auto;
-    padding-bottom: 50px;
-
+    padding-bottom: 50px;  
+    font-family: 'Hind Madurai', sans-serif;
   }
   .container{
     margin:auto;
-    background-color:rgba(255, 255, 255, 0.4);
-    /* background-color: rgba(46, 49, 49, .4); */
+    background-color:rgb(0, 0, 0, .2);
     overflow:auto;
     align-items: center;
-    width:960px;
     padding:0;  
     display: block;
-}
+  }
  .navbar-light{
     position: fixed;
     width:100%;
@@ -51,33 +47,38 @@ body{
  .jumbotron{
     text-align: center;
     display: block;
-    background-color: rgba(255,255,255, 0.4);
-    color: rgba(74,170,165);
+    color: rgba(255,255,255);
     font-weight: bold;
+    background-color:rgb(0, 0, 0, .2);
   }
 h1{
     font-size: 80px;
     padding-top: 50px;
+    font-family: 'Shadows Into Light', cursive;
 }
 h2{
+    font-size: 80px;
+    padding-top: 50px;
+    font-family: 'Hind Madurai', sans-serif;  
+}
+h3{
     padding-top: 20px;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
-    color: rgba(74,170,165);
+    font-size: 40px;
+    font-family: 'Shadows Into Light', cursive;
 }
 img{
-    width:380px;
-    height:380px;
+    width:400px;
+    height:400px;
     float:left;
     margin-right:20px;
-    padding-bottom: 30px;
 }
 .clearfix{
     overflow:auto;
 }
 a{
-    color: rgba(74,170,165); 
+    color: white; 
 }
 /* index.html */
 #about-me-section{
@@ -106,13 +107,17 @@ a{
     padding-bottom: 20px;
 }
 .project-link{
-    font-size: 18px; 
-    color: rgba(74,170,165, 0.8);
+    font-size: 20px; 
+    color: white;
+    padding-right: 20px;
+}
+.links{
+    text-align: center;
 }
 /* portfolio.html */
 #portfolio-section .container {
     overflow: hidden;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     justify-content: center;
     align-items: center;
 } 
@@ -129,20 +134,23 @@ a{
     margin-top:30px;
 }
 #portfolio-image-info{
-    margin:30px;
+    margin-top:30px;
     justify-content: center;
 }
 .portfolio-image{
-    float: left;
+    /* float: left;
     width:40%;
-    height:30%; 
+    height:30%;  */
     position: relative;
 
 } 
 .portfolio-image img{
     float:  left;
-    width:300px;
+    width:100%;
+    /* width:300px; */
     height:200px;
+    border-color: white;
+    border-width: 5px;
     margin:0px;
     opacity: 0.60;
     -moz-opacity: 60%;
@@ -152,14 +160,13 @@ a{
 .portfolio-image .position-text a{
     overflow:hidden;
     text-align:center;
-    background-color:rgba(74,170,165);
-    font-family:'Georgia', Times, 'Times New Roman', serif;
-    color:#ffffff;
+    background-color:#ffffff;
+    color: rgba(74,170,165);
     position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-20%, -80%);
-    width:300px;
+    transform: translate(-50%, 150%);
+    width:100%;
     padding:10px 0px 10px 0px;
     font-size: 20px;
     margin:0;
@@ -168,14 +175,13 @@ a{
 .portfolio-image .repo a{
     overflow:hidden;
     text-align:center;
-    background-color:rgba(74,170,165);
-    font-family:'Georgia', Times, 'Times New Roman', serif;
-    color:#ffffff;
+    background-color: #ffffff;
+    color: rgba(74,170,165);
     position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-20%, 40%);
-    width:300px;
+    transform: translate(-50%, 300%);
+    width:100%;
     padding:10px 0px 10px 0px;
     font-size: 20px;
     margin:0px;
@@ -183,16 +189,14 @@ a{
 }
 
 .portfolio-image .position-text a:hover{
-    color:#4aaaa5;
-    background-color:#ffffff;
-    font-family:'Georgia', Times, 'Times New Roman', serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
     text-decoration: none;
     transition: 0.3s;
 }
 .portfolio-image .repo a:hover{
-    color:#4aaaa5;
-    background-color:#ffffff;
-    font-family:'Georgia', Times, 'Times New Roman', serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -208,39 +212,48 @@ a{
     /* contact.html */
 #contact-form-section{
     margin-top:40px;
-    margin-bottom:10px;
-    background-position: center;
+    margin-bottom:100px;
+    
+    /* background-position: center; */
     text-align: left;
-    float:center;
-    padding-bottom: 40px;
+    /* width:100%; */
+    /* float:center;  */
 }
 #contact{
     margin:30px;
 }
 #contact-form{
-    margin:30px;
+    margin:10px;
+    /* width:100%; */
+    padding-bottom: 40px;
 }
 .btn {
-    font:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color:#ffffff;
-    background-color: rgba(74,170,165, 0.8);
+    border-color: #4aaaa5;
+    color:#4aaaa5;
+    background-color:#ffffff;
     margin-left: -15px;
   }
   .btn:hover{
-    color:#4aaaa5;
-    background-color:#ffffff;
-    border-color: #4aaaa5;
+    color:#ffffff;
+    background-color: rgba(74,170,165);
+    border-color: #ffffff;
   }
 input{
     width:100%;
     margin-bottom: 5px;
-    /* height: 20px; */
 }
 
 textarea{
     width: 100%;
     height: 300px;
     border-color: #cccccc;
+}
+
+footer{
+    background-color:rgba(74,170,165, 0.8);
+    margin-bottom: -50px;
+    height: 50px;
+    padding-top: 15px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -250,7 +263,6 @@ textarea{
     .row{
         justify-content: center;
         text-align: center;
-        /* margin-left:-30px; */
     }
     img{
         width: 100%;
