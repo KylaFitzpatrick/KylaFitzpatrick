@@ -5,51 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/114b5b4ae7.js" crossorigin="anonymous"></script>
     <title>Kyla Fitzpatrick's Portfolio</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="nav-link" class="navbar-brand" href="#">Kyla's Portfolio</a>
-        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about-me-section"> About
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience-section"> Experience
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio-section"> Work
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact-form-section"> Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Kyla's Portfolio</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about-me-section"> About
+                        </a></li>
+                    <li><a href="#experience-section"> Experience
+                        </a></li>
+                    <li><a href="#portfolio-section"> Work
+                        </a></li>
+                    <li><a href="#contact-form-section"> Contact
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#about-me-section"> About
+            </a></li>
+        <li><a href="#experience-section"> Experience
+            </a></li>
+        <li><a href="#portfolio-section"> Work
+            </a></li>
+        <li><a href="#contact-form-section"> Contact
+            </a></li>
+    </ul>
     <div class="jumbotron jumbotron-fluid">
         <div id="welcome-section">
             <h1>I'm Kyla Fitzpatrick</h1>
-            <img id="imgcontainer" class="clearfix" src="assets/images/happy me.jpg" alt="Kyla Fitzpatrick" class="responsive">
+            <img id="imgcontainer" class="clearfix" src="assets/images/happy me.jpg" alt="Kyla Fitzpatrick"
+                class="responsive">
             <h2>Welcome to my portfolio page</h2>
         </div>
     </div>
@@ -70,17 +71,17 @@
                     more engaging user experiences on the web.
                     <br>
                     <br>
-                    <p>Please click the links provided to view my resume and check out my GitHub for projects I have
-                        worked on.</p>
-                    <br>
-                    <div class="links">
-                        <a target="_blank" href="KylaFitzpatrick.pdf" class="btn btn-primary"
-                            title="Download My Resume"><i class="fas fa-file"></i> Resume</a>
+                <p>Please click the links provided to view my resume and check out my GitHub for projects I have
+                    worked on.</p>
+                <br>
+                <div class="links">
+                    <a target="_blank" href="KylaFitzpatrick.pdf" class="btn btn-primary" title="Download My Resume"><i
+                            class="fas fa-file"></i> Resume</a>
 
 
-                        <a target="_blank" class="btn btn-primary" href="https://github.com/KylaFitzpatrick"><i
-                                class="fab fa-github-square"></i> GitHub</a>
-                    </div>
+                    <a target="_blank" class="btn btn-primary" href="https://github.com/KylaFitzpatrick"><i
+                            class="fab fa-github-square"></i> GitHub</a>
+                </div>
             </div>
         </div>
     </section>
@@ -91,12 +92,15 @@
             </div>
             <br>
             <div class="row">
-                <div class="col-8 col-md-6">
+                <div class="col s10 m6">
                     <div class="card" style="text-align: center;">
-                        <img id="imgcard" src="assets/images/word_guess.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgba(74,170,165);">Word Guess</h5>
-                            <div class="button" style="display: inline-flex; ">
+                        <div class="card-image">
+                            <img src="assets/images/word_guess.png" class="responsive-img">
+
+                        </div>
+                        <div class="card-content"> <span class="card-title" style="color:teal">Word Guess</span></div>
+                        <div class="card-action">
+                            <div class="button" style="display: inline-flex;text-align:center; ">
                                 <a target="_blank" href="https://kylafitzpatrick.github.io/Word-Guess/"
                                     class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
                                 <br>
@@ -106,14 +110,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 col-md-6">
+                <div class="col s10 m6">
                     <div class="card" style="text-align: center;">
-                        <img id="imgcard" src="assets/images/youtify.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgba(74,170,165);">Youtify</h5>
+                        <div class="card-image">
+                            <img src="assets/images/youtify.png" alt="youtify" class="responsive-img">
+                        </div>
+                        <div class="card-content"> <span class="card-title" style="color:teal">Youtify</span></div>
+                        <div class="card-action">
                             <div class="button" style="display: inline-flex; ">
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/Youtify" class="btn btn-primary"
-                                    style="margin-right: 40px; padding-right:10px">Project</a>
+                                <a target="_blank" href="https://github.com/KylaFitzpatrick/Youtify"
+                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
                                 <br>
                                 <a target="_blank" href="https://github.com/KylaFitzpatrick/Youtify"
                                     class="btn btn-primary">GitHub</a>
@@ -122,92 +128,15 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-8 col-md-6">
-                    <div class="card" style="text-align: center;">
-                        <img src="assets/images/animal_search.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgba(74,170,165);">GifTastic</h5>
-                            <div class="button" style="display: inline-flex; ">
-                                <a target="_blank" href="https://kylafitzpatrick.github.io/GifTastic/"
-                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
-                                <br>
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/GifTastic"
-                                    class="btn btn-primary">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8 col-md-6">
-                    <div class="card" style="text-align: center;">
-                        <img src="assets/images/spotify-this-song.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgba(74,170,165);">Liri Node App</h5>
-                            <div class="button" style="display: inline-flex; ">
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/liri-node-app"
-                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
-                                <br>
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/liri-node-app"
-                                    class="btn btn-primary">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="row">
-                <div class="col-8 col-md-6">
+                <div class="col s10 m6">
                     <div class="card" style="text-align: center;">
-                        <img src="assets/images/wordguess.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgba(74,170,165);">Contructor Word Guess</h5>
-                            <div class="button" style="display: inline-flex; ">
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/Constructor-Word-Guess"
-                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
-                                <br>
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/Constructor-Word-Guess"
-                                    class="btn btn-primary">GitHub</a>
-                            </div>
+                        <div class="card-image">
+                            <img src="assets/images/burger.png" alt="veganburger" class="responsive-img">
                         </div>
-                    </div>
-                </div>
-                <div class="col-8 col-md-6">
-                    <div class="card" style="text-align: center;">
-                        <img src="assets/images/bamazon.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgba(74,170,165);">Node.js-MySQL</h5>
-                            <div class="button" style="display: inline-flex; ">
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/Node.js-MySQL"
-                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
-                                <br>
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/Node.js-MySQL"
-                                    class="btn btn-primary">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <div class="row">
-                <div class="col-8 col-md-6">
-                    <div class="card" style="text-align: center;">
-                        <img id="imgcard" src="assets/images/friendfinder.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgba(74,170,165);">Friend Finder</h5>
-                            <div class="button" style="display: inline-flex; ">
-                                <a target="_blank" href="https://mighty-oasis-51043.herokuapp.com/"
-                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
-                                <br>
-                                <a target="_blank"
-                                    href="https://github.com/KylaFitzpatrick/Friend-Finder-Node-and-Express-Servers"
-                                    class="btn btn-primary">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8 col-md-6">
-                    <div class="card" style="text-align: center;">
-                        <img id="imgcard" src="assets/images/burger.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgba(74,170,165);">Eat-Da-Vegan-Burger</h5>
+                        <div class="card-content"> <span class="card-title"
+                                style="color:teal">Eat-Da-Vegan-Burger</span></div>
+                        <div class="card-action">
                             <div class="button" style="display: inline-flex; ">
                                 <a target="_blank" href="https://eat-da-vegan-burger.herokuapp.com/"
                                     class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
@@ -218,75 +147,51 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-8 col-md-6">
+                <div class="col s10 m6">
                     <div class="card" style="text-align: center;">
-                        <img id="imgcard" src="assets/images/burger2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: rgba(74,170,165);">Eat-Da-Vegan-Burger</h5>
+                        <div class="card-image">
+                            <img src="assets/images/mongo-scraper.png" alt="mongo_scraper" class="responsive-img">
+                        </div>
+                        <div class="card-content"> <span class="card-title" style="color:teal">Mongo Scraper</span>
+                        </div>
+                        <div class="card-action">
                             <div class="button" style="display: inline-flex; ">
-                                <a target="_blank" href="https://eat-da-vegan-burger-2.herokuapp.com/"
-                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
+                                <a target="_blank" href="https://sf-scraper.herokuapp.com/" class="btn btn-primary"
+                                    style="margin-right: 40px; padding-right:10px">Project</a>
                                 <br>
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/Burger-2"
+                                <a target="_blank" href="https://github.com/KylaFitzpatrick/SF_Scraper"
                                     class="btn btn-primary">GitHub</a>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-8 col-md-6">
+            </div>
+            <div class="row">
+                <div class="col s10 m6">
                     <div class="card" style="text-align: center;">
-                        <img id="imgcard" src="assets/images/mongo-scraper.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: rgba(74,170,165);">Mongo Scraper</h5>
-                        <div class="button" style="display: inline-flex; ">
-                            <a target="_blank" href="https://sf-scraper.herokuapp.com/"
-                                class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
-                            <br>
-                            <a target="_blank" href="https://github.com/KylaFitzpatrick/SF_Scraper"
-                                class="btn btn-primary">GitHub</a>
+                        <div class="card-image">
+                            <img src="assets/images/clickygame.png" alt="clicky_game" class="responsive-img">
+                        </div>
+                        <div class="card-content"> <span class="card-title" style="color:teal">Clicky Game</span></div>
+                        <div class="card-action">
+                            <div class="button" style="display: inline-flex; ">
+                                <a target="_blank" href="https://kylafitzpatrick.github.io/clicky-game/"
+                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
+                                <br>
+                                <a target="_blank" href="https://github.com/KylaFitzpatrick/clicky-game"
+                                    class="btn btn-primary">GitHub</a>
 
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        <div class="row">
-            <div class="col-8 col-md-6">
-                <div class="card" style="text-align: center;">
-                    <img id="imgcard" src="assets/images/clickygame.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: rgba(74,170,165);">Clicky Game</h5>
-                        <div class="button" style="display: inline-flex; ">
-                            <a target="_blank" href="https://kylafitzpatrick.github.io/clicky-game/"
-                                class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
-                            <br>
-                            <a target="_blank" href="https://github.com/KylaFitzpatrick/clicky-game"
-                                class="btn btn-primary">GitHub</a>
-
-                        </div>
-                    </div>
+                <div class="col s10 m6">
                 </div>
             </div>
-            <div class="col-8 col-md-6">
-        <!-- <div class="card" style="text-align: center;">
-            <img id="imgcard" src="assets/images/planner.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title" style="color: rgba(74,170,165);">Pandemic Planner</h5>
-                <div class="button" style="display: inline-flex; ">
-                    <a target="_blank" href="https://pandemic-prep.herokuapp.com/" class="btn btn-primary"
-                        style="margin-right: 40px; padding-right:10px">Project</a>
-                    <br>
-                    <a target="_blank" href="https://github.com/Kianimal/Project-2"
-                        class="btn btn-primary">GitHub</a>
-                </div> -->
-             </div>
         </div>
-    </div>
-</div>
-</div>
+        </div>
+        </div>
     </section>
     <section id="tech-section">
         <div class="container">
@@ -295,44 +200,45 @@
             </div>
             <br>
             <div class="row">
-                <p>My favorite technologies include HTML5, CSS3, Javascript, Bootstrap, and Node.js.</p>
+                <p>My favorite technologies include HTML, CSS, Javascript, Bootstrap, and Node.js.</p>
                 <br>
                 <br>
-                <div id="techimg">
-                <div class="col-md-6">
-                <img class="clearfix" src="assets/images/tech.png" class="responsive">
-            </div>
-        </div>
-        <div id="techimg">
-            <div class="col-md-6">
-                <img class="clearfix" src="assets/images/node.png" class="responsive">
-            </div>
-        </div>
+
+                <div class="col s6">
+                    <img src="assets/images/tech.png" class="responsive-img">
                 </div>
-                <br>
-            <br>
+
+                <div class="col s6">
+                    <img src="assets/images/node.png" class="responsive-img">
+                </div>
+
             </div>
-        </section>
+        </div>
+    </section>
     <section id="contact-form-section">
         <div class="container">
             <div id="contact">
                 <h3>Contact me</h3>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div id="contact-form">
-                        <div class="form-group">
-                            <label for="formGroupExampleInput">Full Name</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Full Name">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">Full Name</label>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                <label for="icon_prefix2">Message</label>
+                            </div>
                         </div>
                         <div class="col-auto my-1">
                             <a id="submit" href="mailto:kfitzpatrick44@gmail.com?subject=Inquiry&body="
@@ -340,43 +246,46 @@
                         </div>
                     </div>
                 </div>
-
+            <div class="row">
+            <div class="col s12">
+                <div class="contact-info">
+                    <p> Please contact me via email, LinkedIn or my phone number provided below.</p>
+                </div>
                 <br>
-                <div class="col-md-6">
-                    <div class="contact-info">
-                        <p> Please contact me via email, LinkedIn or my phone number provided below.</p>
-                    </div>
+                <div class="links">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:kfitzpatrick44@gmail.com?subject=Inquiry&body=">kfitzpatrick44@gmail.com</a>
                     <br>
-                    <div class="links">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:kfitzpatrick44@gmail.com?subject=Inquiry&body=">kfitzpatrick44@gmail.com</a>
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <a href="tel:704-748-3653">704-748-3653</a>
+                    <br>
+                    <br>
+                    <a class="btn btn-primary" target="_blank"
+                        href="https://www.linkedin.com/in/kylaannefitzpatrick/"><i class="fab fa-linkedin"></i>
+                        LinkedIn</a>
                         <br>
                         <br>
-                        <i class="fa fa-phone-square" aria-hidden="true"></i>
-                        <a href="tel:704-748-3653">704-748-3653</a>
-                        <br>
-                        <br>
-                        <a class="btn btn-primary" target="_blank"
-                            href="https://www.linkedin.com/in/kylaannefitzpatrick/"><i class="fab fa-linkedin"></i>
-                            LinkedIn</a>
-                    </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
     <footer>
-        <span class="footer"> &copy; Copyright 2020, Kyla Fitzpatrick's Portfolio</span>
+        <div class="footer-copyright">
+                © Copyright 2020, Kyla Fitzpatrick's Portfolio
+                </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>$(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.parallax').parallax();
+        });
+
+    </script>
     <script src="app.js"></script>
 </body>
 

@@ -2,15 +2,40 @@
     box-sizing:border-box;
     scroll-behavior: smooth;
 }
-
 html {
     position: relative;
     min-height: 100%;
 }
+nav{
+    background-color:teal;
+}
+.brand-logo{
+    padding-top: 20px;
+}
+nav ul a{
+    padding-top: 20px;
+}
 
+  main {
+    flex: 1 0 auto;
+   
+  }
+  #imgcontainer{
+    border-radius: 50%;
+        width:400px;
+        height:400px;
+        /* float:left; */
+        margin-right:20px;
+}
+.clearfix{
+    overflow:auto;
+}
 body{
-    text-align: center;
-    background-image: linear-gradient(to bottom right, rgba(74,170,165), white);
+    width:100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, teal, white);
     color: white;
     font:20px/1.5 'Georgia', Times, 'Times New Roman', serif;
     border-color:#dddddd;
@@ -19,37 +44,21 @@ body{
   }
   .container{
     margin:auto;
-    background-color:rgb(0, 0, 0, .2);
-    overflow:auto;
+    background-color:rgba(243, 239, 239, 0.217);
+    overflow:hidden;
     align-items: center;
     padding:0;  
     display: block;
   }
- .navbar-light{
-    position: fixed;
-    width:100%;
-    background-color: rgba(74,170,165);
-    z-index: 99999;
-    color: white;
-
+input.autocomplete {
+    color: none;
   }
-  .custom-toggler.navbar-toggler { 
-    border-color: white; 
-}
-  .custom-toggler .navbar-toggler-icon{ 
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-
-  }
-  .nav-link{
-    color:white !important;
-}
-
  .jumbotron{
     text-align: center;
     display: block;
     color: rgba(255,255,255);
     font-weight: bold;
-    background-color:rgb(0, 0, 0, .2);
+    background-color:rgba(243, 239, 239, 0.217);
   }
 h1{
     font-size: 80px;
@@ -68,17 +77,9 @@ h3{
     font-size: 40px;
     font-family: 'Shadows Into Light', cursive;
 }
-img{
-    width:400px;
-    height:400px;
-    /* float:left; */
-    margin-right:20px;
-}
-#imgcontainer{
-    border-radius: 50%;
-}
-.clearfix{
-    overflow:auto;
+.card-image img{
+    width:300px;
+    height:300px;
 }
 a{
     color: white; 
@@ -102,6 +103,7 @@ a{
 }
 #about-image-info a.btn{
     margin-right: 20px;
+    font-size: 20px;
     display: inline;
 }
 .project-link{
@@ -111,6 +113,7 @@ a{
 }
 .links{
     text-align: center;
+    
 }
 /* portfolio */
 #portfolio-section .container {
@@ -135,10 +138,10 @@ a{
     margin-bottom:20px;
 }
 
-.responsive {
+/* .responsive {
     width: 100%;
     height: 100%;
-  }
+  } */
   .row{
       margin: 0 auto;
       justify-content: center;
@@ -146,8 +149,6 @@ a{
       /* tech */
 #tech-section{
     margin-top:40px;
- 
-    text-align: left;
 }
 #techimg{
     text-align: center;
@@ -157,21 +158,16 @@ a{
 #contact-form-section{
     margin-top:40px;
     margin-bottom:100px;
-    text-align: left;
+    /* text-align: left; */
+    overflow: hidden;
+    width:100%;
 }
-#contact{
-    margin:30px;
-}
-#contact-form{
-    margin:10px;
-    /* width:100%; */
-    padding-bottom: 20px;
-}
+
 .btn {
     border-color: #ffffff;
     color:#ffffff;
     background-color:#4aaaa5;
-    margin-left: -15px;
+    /* margin-left: -15px; */
   }
   .btn:hover{
     color:#4aaaa5;
@@ -197,45 +193,27 @@ footer{
     margin-bottom: -50px;
     height: 50px;
     padding-top: 15px;
+    text-align: center;
+    overflow: hidden;
 }
-@media only screen and (max-width: 991px) {
-    .container {
-       
-            width:100%;
-          
-    }
-    .card{
-        justify-content: center;
-        text-align: center;
-        width:100%;
-        display: flex;
-        margin-bottom: 20px;
-        
-    }
-}
-@media only screen and (max-width: 767px) {
-    .container {
-      width:100%;
-    }
-    .links{
-        margin-bottom: 40px;
-    }
-    .row{
-        justify-content: center;
-        text-align: center;
-    }
-    #contact-form{
-        margin:10px;
-        text-align: left;
-      
-    }
-    .contact-info{
-        text-align: center;
-        margin-top: 20px;
-    }
-    #imgcard{
-        width: 100%;
-        /* margin-bottom: 10px; */
-        height:100%;
-    }
+.card {
+    text-align: center;
   }
+  
+ .sidenav{
+     background-color: teal;
+     
+ }
+ .sidenav a{
+    color: white !important;
+ }
+@media only screen and (max-width: 600px) {
+   
+   .row .card{
+       align-items: center;
+       margin-left: 80px;
+   }
+}
+  
+    
+  
