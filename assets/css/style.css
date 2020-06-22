@@ -8,6 +8,8 @@ html {
 }
 nav{
     background-color:teal;
+    position: fixed;
+    z-index: 1;
 }
 .brand-logo{
     padding-top: 20px;
@@ -135,16 +137,37 @@ padding-bottom: 40px
 #portfolio{
     margin-top:30px;
 }
+/* .row{
+    margin-right:50px;
+}
+.col{
+    margin-left: 20px;
+    margin-right: -50px;
+} */
 .card{
     margin-bottom:20px;
     float: center;
-}
-
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    width: 300px;
+    box-shadow: 10px 8px 10px teal;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .card:hover{
+    transform: scale(1.1);
+    transition: .5s;
+  }
   .row{
       margin: auto;
       justify-content: center;
       float: center;
       align-items: center;
+      padding-bottom: 50px;
   }
       /* tech */
 #tech-section{
@@ -216,14 +239,49 @@ footer{
  .sidenav a{
     color: white !important;
  }
-@media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 900px) {
+    .col {
+      width: 100%;
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+    .row{
+        margin-bottom: -50px;
+    }
    
-   .row .card{
-       align-items: center;
-       margin-left: 40px;
-       width: 100%
-   }
-}
-  
-    
+  }
+ @media only screen and (max-width: 800px) {
+    .col {
+      width: 100%;
+      margin-bottom: 30px;
+      margin-left: 50px;
+      margin-right: 50px;
+      justify-content: center;
+    }
+    .row{
+        
+        margin-bottom: -50px;
+    }
+    .row .card{
+        
+        margin-left: 120px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .col {
+        /* margin:0; */
+      width: 100%;
+      margin-bottom: 30px;
+      margin-left: 50px;
+      margin-right: 0px;
+      justify-content: center;
+    }
+    .row{
+        
+        margin-bottom: -50px;
+    }
+    .row .card{
+        margin-left:50px;
+    } 
+  }
   
