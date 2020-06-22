@@ -16,4 +16,4 @@ Users can get help with this project by using stack overflow for any questions t
 Kyla Fitzpatrick maintains and contributes to this project.
 
 ### Deployed link: 
-https://kylafitzpatrick.github.io/Updated-Portfolio-Page/
+https://kylafitzpatrick.github.io/KylaFitzpatrick/
