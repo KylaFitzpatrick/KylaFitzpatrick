@@ -12,7 +12,7 @@ nav{
     z-index: 1;
 }
 .brand-logo{
-    padding-top: 20px;
+    margin: 10px;
 }
 nav ul a{
     padding-top: 20px;
@@ -259,12 +259,15 @@ footer{
       justify-content: center;
     }
     .row{
-        
         margin-bottom: -50px;
     }
     .row .card{
-        
         margin-left: 120px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .brand-logo{
+        margin: 0px;
     }
   }
   @media only screen and (max-width: 500px) {
@@ -283,5 +286,8 @@ footer{
     .row .card{
         margin-left:50px;
     } 
+    .brand-logo{
+        margin: 1px;
+    }
   }
   
