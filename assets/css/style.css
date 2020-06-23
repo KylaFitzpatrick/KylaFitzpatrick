@@ -80,6 +80,9 @@ h3{
     font-size: 40px;
     font-family: 'Shadows Into Light', cursive;
 }
+#modal1, #modal2, #modal3 , #modal4, #modal5{
+    text-align: center;
+}
 .card-image img{
     width:300px;
     height:300px;

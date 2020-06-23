@@ -18,22 +18,22 @@
 </head>
 
 <body>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Kyla Fitzpatrick</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#about-me-section"> About
-                        </a></li>
-                    <li><a href="#portfolio-section"> Work
-                        </a></li>
-                    <li><a href="#tech-section"> Techologies
-                        </a></li>
-                    <li><a href="#contact-form-section"> Contact
-                        </a></li>
-                </ul>
-            </div>
-        </nav>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Kyla Fitzpatrick</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about-me-section"> About
+                    </a></li>
+                <li><a href="#portfolio-section"> Work
+                    </a></li>
+                <li><a href="#tech-section"> Techologies
+                    </a></li>
+                <li><a href="#contact-form-section"> Contact
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
     <ul class="sidenav" id="mobile-demo">
         <li><a href="#about-me-section"> About
             </a></li>
@@ -59,19 +59,24 @@
             </div>
             <div id="about-image-info">
                 <p>
-                    Aspiring full stack web developer leveraging experience in QA to build a more intuitive user experiences. Applied aspects of QA and agile development on various teams where I worked with developers, product managers and QA colleagues to deliver new user-focused features on time. Driven to hone skills in the future as a web developer to deliver
+                    Aspiring full stack web developer leveraging experience in QA to build a more intuitive user
+                    experiences. Applied aspects of QA and agile development on various teams where I worked with
+                    developers, product managers and QA colleagues to deliver new user-focused features on time. Driven
+                    to hone skills in the future as a web developer to deliver
                     more engaging user experiences on the web.
                     <br>
                     <br>
-                <p>Please click the links provided to view my resume and check out my GitHub for projects I have worked on.</p>
+                <p>Please click the links provided to view my resume and check out my GitHub for projects I have worked
+                    on.</p>
                 <br>
-                </div>
-                <div class="links">
-                    <a class="btn btn-primary" target="_blank" href="KylaFitzpatrick.pdf"  ><i class="fas fa-file"></i> Resume</a>
-                    <a class="btn btn-primary" target="_blank" href="https://github.com/KylaFitzpatrick"><i
-                    class="fab fa-github-square"></i> GitHub</a>
-                </div>
             </div>
+            <div class="links">
+                <a class="btn btn-primary" target="_blank" href="KylaFitzpatrick.pdf"><i class="fas fa-file"></i>
+                    Resume</a>
+                <a class="btn btn-primary" target="_blank" href="https://github.com/KylaFitzpatrick"><i
+                        class="fab fa-github-square"></i> GitHub</a>
+            </div>
+        </div>
         </div>
     </section>
     <section id="portfolio-section">
@@ -89,14 +94,28 @@
                         </div>
                         <div class="card-content"> <span class="card-title">Word Guess</span></div>
                         <div class="card-action">
-                            <div class="button" style="display: inline-flex;text-align:center; ">
-                                <a target="_blank" href="https://kylafitzpatrick.github.io/Word-Guess/"
-                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
-                                <br>
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/Word-Guess"
-                                    class="btn btn-primary">GitHub</a>
+                            <div class="button">
+
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">See more</a>
+
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Word Guess</h4>
+                        <p>Tools used: HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a target="_blank" href="https://kylafitzpatrick.github.io/Word-Guess/"
+                            class="btn btn-primary">Project</a>
+
+                        <a target="_blank" href="https://github.com/KylaFitzpatrick/Word-Guess"
+                            class="btn btn-primary">GitHub</a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
                     </div>
                 </div>
                 <div class="col s12 m6 l6">
@@ -106,80 +125,118 @@
                         </div>
                         <div class="card-content"> <span class="card-title">Youtify</span></div>
                         <div class="card-action">
-                            <div class="button" style="display: inline-flex; ">
-                                <a target="_blank" href="https://kylafitzpatrick.github.io/Youtify/"
-                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
-                                <br>
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/Youtify"
-                                    class="btn btn-primary">GitHub</a>
+                            <div class="button">
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal2">See more</a>
                             </div>
+                 
                         </div>
                     </div>
                 </div>
-            </div> 
-            <div class="row">
-                <div class="col s12 m6 l6">
-                    <div class="card" style="text-align: center;">
-                        <div class="card-image">
-                            <img src="assets/images/burger.png" alt="veganburger" class="responsive-img">
-                        </div>
-                        <div class="card-content"> <span class="card-title"
-                               >Vegan Burger</span></div>
-                        <div class="card-action">
-                            <div class="button" style="display: inline-flex; ">
-                                <a target="_blank" href="https://eat-da-vegan-burger.herokuapp.com/"
-                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
-                                <br>
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/Burger"
-                                    class="btn btn-primary">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
+                          
+            </div>
+             <!-- Modal Structure -->
+             <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <h4>Youtify</h4>
+                    <p>Tools used: HTML, CSS, JavaScript, Firebase, Spotify API, Bootstrap, YouTube API</p>
                 </div>
-                <div class="col s12 m6 l6">
-                    <div class="card" style="text-align: center;">
-                        <div class="card-image">
-                            <img src="assets/images/mongo-scraper.png" alt="mongo_scraper" class="responsive-img">
-                        </div>
-                        <div class="card-content"> <span class="card-title" >Mongo Scraper</span>
-                        </div>
-                        <div class="card-action">
-                            <div class="button" style="display: inline-flex; ">
-                                <a target="_blank" href="https://sf-scraper.herokuapp.com/" class="btn btn-primary"
-                                    style="margin-right: 40px; padding-right:10px">Project</a>
-                                <br>
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/SF_Scraper"
-                                    class="btn btn-primary">GitHub</a>
-
-                            </div>
+                <div class="modal-footer">
+                <a target="_blank" href="https://kylafitzpatrick.github.io/Youtify/" class="btn btn-primary">Project</a>
+                <a target="_blank" href="https://github.com/KylaFitzpatrick/Youtify"
+                    class="btn btn-primary">GitHub</a>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <div class="card" style="text-align: center;">
+                    <div class="card-image">
+                        <img src="assets/images/burger.png" alt="veganburger" class="responsive-img">
+                    </div>
+                    <div class="card-content"> <span class="card-title">Vegan Burger</span></div>
+                    <div class="card-action">
+                        <div class="button" >
+                            <a class="waves-effect waves-light btn modal-trigger" href="#modal3">See more</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col s12 m6 l6">
-                    <div class="card" style="text-align: center;">
-                        <div class="card-image">
-                            <img src="assets/images/clickygame.png" alt="clicky_game" class="responsive-img">
-                        </div>
-                        <div class="card-content"> <span class="card-title">Clicky Game</span></div>
-                        <div class="card-action">
-                            <div class="button" style="display: inline-flex; ">
-                                <a target="_blank" href="https://kylafitzpatrick.github.io/clicky-game/"
-                                    class="btn btn-primary" style="margin-right: 40px; padding-right:10px">Project</a>
-                                <br>
-                                <a target="_blank" href="https://github.com/KylaFitzpatrick/clicky-game"
-                                    class="btn btn-primary">GitHub</a>
-
-                            </div>
-                        </div>
+                 <!-- Modal Structure -->
+                 <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <h4>Vegan Burger</h4>
+                        <p>Tools used: Node, CSS, JavaScript, Express, Express Handlebars, and MySQL</p>
                     </div>
+                    <div class="modal-footer">
+                        <a target="_blank" href="https://eat-da-vegan-burger.herokuapp.com/" class="btn btn-primary">Project</a>
+                    <a target="_blank" href="https://github.com/KylaFitzpatrick/Burger"
+                        class="btn btn-primary">GitHub</a>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
                 </div>
-                <div class="col s12 m6 l6">
+            </div>
+            <div class="col s12 m6 l6">
+                <div class="card" style="text-align: center;">
+                    <div class="card-image">
+                        <img src="assets/images/mongo-scraper.png" alt="mongo_scraper" class="responsive-img">
+                    </div>
+                    <div class="card-content"> <span class="card-title">SF Scraper</span>
+                    </div>
+                    <div class="card-action">
+                        <div class="button" >
+                            <a class="waves-effect waves-light btn modal-trigger" href="#modal4">See more</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+         <!-- Modal Structure -->
+         <div id="modal4" class="modal">
+            <div class="modal-content">
+                <h4>SF Scraper</h4>
+                <p>Tools used: Node.js, Express Handlebars, Cheerio, Axios, Mongoose.js, MongoDB, CSS, Materialize, and JavaScript</p>
+            </div>
+            <div class="modal-footer">
+                <a target="_blank" href="https://sf-scraper.herokuapp.com/" class="btn btn-primary"
+                                >Project</a>
+                            <a target="_blank" href="https://github.com/KylaFitzpatrick/SF_Scraper"
+                                class="btn btn-primary">GitHub</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <div class="card" style="text-align: center;">
+                    <div class="card-image">
+                        <img src="assets/images/clickygame.png" alt="clicky_game" class="responsive-img">
+                    </div>
+                    <div class="card-content"> <span class="card-title">Clicky Game</span></div>
+                    <div class="card-action">
+                        <div class="button">
+                            <a class="waves-effect waves-light btn modal-trigger" href="#modal5">See more</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Modal Structure -->
+         <div id="modal5" class="modal">
+            <div class="modal-content">
+                <h4>Clicky Game</h4>
+                <p>Tools used: React, Node.js, CSS, Materialize, JSON, and JavaScript</p>
+            </div>
+            <div class="modal-footer">
+                <a target="_blank" href="https://sf-scraper.herokuapp.com/" class="btn btn-primary"
+                                >Project</a>
+                            <a target="_blank" href="https://github.com/KylaFitzpatrick/SF_Scraper"
+                                class="btn btn-primary">GitHub</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+            <div class="col s12 m6 l6">
+            </div>
+        </div>
+        </div>
+        </div>
         </div>
     </section>
     <section id="tech-section">
@@ -235,36 +292,36 @@
                             <a id="submit" href="mailto:kfitzpatrick44@gmail.com?subject=Inquiry&body="
                                 class="btn btn-primary">Submit</a>
                         </div>
-                    
+
                 </form>
-            <div class="row">
-            <div class="col s12">
-                <div class="contact-info">
-                    <p> Please contact me via email, LinkedIn or my phone number provided below.</p>
-                </div>
-                <br>
-                <div class="links">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:kfitzpatrick44@gmail.com?subject=Inquiry&body=">kfitzpatrick44@gmail.com</a>
-                    <br>
-                    <i class="fa fa-phone-square" aria-hidden="true"></i>
-                    <a href="tel:704-748-3653">704-748-3653</a>
-                    <br>
-                    <br>
-                    <a class="btn btn-primary" target="_blank"
-                        href="https://www.linkedin.com/in/kylaannefitzpatrick/"><i class="fab fa-linkedin"></i>
-                        LinkedIn</a>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="contact-info">
+                            <p> Please contact me via email, LinkedIn or my phone number provided below.</p>
+                        </div>
                         <br>
-                        <br>
+                        <div class="links">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:kfitzpatrick44@gmail.com?subject=Inquiry&body=">kfitzpatrick44@gmail.com</a>
+                            <br>
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                            <a href="tel:704-748-3653">704-748-3653</a>
+                            <br>
+                            <br>
+                            <a class="btn btn-primary" target="_blank"
+                                href="https://www.linkedin.com/in/kylaannefitzpatrick/"><i class="fab fa-linkedin"></i>
+                                LinkedIn</a>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
     </section>
     <footer>
         <div class="footer-copyright">
-                © Copyright 2020, Kyla Fitzpatrick's Portfolio
-                </div>
+            © Copyright 2020, Kyla Fitzpatrick's Portfolio
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
