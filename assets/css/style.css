@@ -38,7 +38,7 @@ body{
     min-height: 100vh;
     flex-direction: column;
     background-image: linear-gradient(to bottom right, teal, white);
-    color: teal;
+    color: purple;
     font:20px/1.5 'Georgia', Times, 'Times New Roman', serif;
     border-color:#dddddd;
     padding-bottom: 50px;  
@@ -65,10 +65,12 @@ input.autocomplete {
 h1{
     font-size: 80px;
     padding-top: 50px;
+    color: purple;
     font-family: 'Shadows Into Light', cursive;
 }
 h2{
     font-size: 80px;
+    color: purple;
     font-family: 'Hind Madurai', sans-serif;  
 }
 h3{
@@ -86,7 +88,7 @@ a{
     color: white; 
 }
 .links a{
-    color:teal;
+    color:purple;
 }
 .links .btn{
     color:white;
