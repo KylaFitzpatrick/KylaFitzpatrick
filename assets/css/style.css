@@ -321,4 +321,11 @@ footer{
         height:80%;
     }
   }
-  
+  @media only screen and (max-width: 400px) {
+      .row{
+          margin: 0 auto;
+      }
+     .card{
+         width:100%;
+     }
+  }
