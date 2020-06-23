@@ -1,5 +1,7 @@
-# Updated-Portfolio-Page
+# Portfolio
 
+![Portfolio](assets/images/portfolio.png)
+ 
 ### What the project does: 
 This is an updated portfolio about my experience, projects I worked on as well as ways to contact me.
 
