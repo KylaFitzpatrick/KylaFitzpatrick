@@ -38,7 +38,7 @@ body{
     min-height: 100vh;
     flex-direction: column;
     background-image: linear-gradient(to bottom right, teal, white);
-    color: white;
+    color: teal;
     font:20px/1.5 'Georgia', Times, 'Times New Roman', serif;
     border-color:#dddddd;
     padding-bottom: 50px;  
@@ -84,6 +84,12 @@ h3{
 }
 a{
     color: white; 
+}
+.links a{
+    color:teal;
+}
+.links .btn{
+    color:white;
 }
 /* about */
 #about-me-section{
@@ -155,6 +161,13 @@ padding-bottom: 40px
     transform: scale(1.1);
     transition: .5s;
   }
+  .row .card{
+    margin: auto;
+    justify-content: center;
+    float: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
   .row{
       margin: auto;
       justify-content: center;
