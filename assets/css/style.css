@@ -136,13 +136,7 @@ padding-bottom: 40px
 #portfolio{
     margin-top:30px;
 }
-/* .row{
-    margin-right:50px;
-}
-.col{
-    margin-left: 20px;
-    margin-right: -50px;
-} */
+
 .card{
     margin-bottom:20px;
     float: center;
@@ -166,7 +160,7 @@ padding-bottom: 40px
       justify-content: center;
       float: center;
       align-items: center;
-      padding-bottom: 50px;
+      /* padding-bottom: 50px; */
   }
       /* tech */
 #tech-section{
@@ -179,8 +173,7 @@ padding-bottom: 40px
     /* contact */
 #contact-form-section{
     margin-top:40px;
-    margin-bottom:100px;
-    /* text-align: left; */
+    margin-bottom:40px;
     overflow: hidden;
     width:100%;
 }
@@ -189,7 +182,7 @@ padding-bottom: 40px
     border-color: #ffffff;
     color:#ffffff;
     background-color:#4aaaa5;
-    /* margin-left: -15px; */
+    margin-left: 20px;
   }
   .btn:hover{
     color:#4aaaa5;
