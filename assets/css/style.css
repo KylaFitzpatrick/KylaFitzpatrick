@@ -234,6 +234,10 @@ input:-webkit-autofill {
     text-align: center;
     margin-top: 20px;
 }
+ /* label focus color */
+ #contact-form-section .input-field label {
+    color: purple;
+}
 footer{
     background-color:rgba(74,170,165, 0.8);
     margin-bottom: -50px;
