@@ -238,6 +238,14 @@ input:-webkit-autofill {
  #contact-form-section .input-field label {
     color: purple;
 }
+/* label underline focus color */
+#contact-form-section .input-field :focus {
+    border-bottom: 1px solid purple;
+    box-shadow: 0 1px 0 0 purple;
+  }
+  .material-icons{
+    color: purple !important;
+    }
 footer{
     background-color:rgba(74,170,165, 0.8);
     margin-bottom: -50px;
