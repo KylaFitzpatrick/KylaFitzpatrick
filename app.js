@@ -1,5 +1,4 @@
 $("#submit").on("click", function(){
-    alert("clicked");
     $("#first_name").val();
     $("#email").val();
     var body = $("#icon_prefix2").val();
