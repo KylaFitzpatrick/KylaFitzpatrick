@@ -239,14 +239,22 @@ input:-webkit-autofill {
 }
 #contact-form-section input {
 color: teal;
+border-bottom: 1px solid purple;
 }
 
 #contact-form-section textarea{
     color: teal;
+    border-bottom: 1px solid purple;
 }
+
+#contact-form-section .input-field {
+    border-bottom: purple;
+}
+
  /* label focus color */
  #contact-form-section .input-field label {
     color: purple;
+   
 }
 /* label underline focus color */
 #contact-form-section .input-field :focus {
@@ -255,6 +263,12 @@ color: teal;
   }
   .material-icons.active{
     color: purple !important;
+    }
+    .modal-content h3{
+    font-size: 50px
+    }
+    .modal-close{
+        color:teal;
     }
 footer{
     background-color:rgba(74,170,165, 0.8);
