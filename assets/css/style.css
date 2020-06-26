@@ -11,8 +11,8 @@ nav{
     position: fixed;
     z-index: 1;
 }
-.brand-logo{
-    margin: 10px;
+nav .brand-logo{
+    padding-top: 15px;
 }
 nav ul a{
     padding-top: 20px;
@@ -23,10 +23,10 @@ nav ul a{
    
   }
 #imgcontainer{
+    border: 3px solid purple;
     border-radius: 50%;
         width:400px;
         height:400px;
-        /* float:left; */
         margin-right:20px;
 }
 .clearfix{
