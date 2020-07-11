@@ -69,7 +69,7 @@ h1{
     padding-top: 70px;
     padding-bottom: 20px;
     color: purple;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Shadows Into Light';
 }
 h2{
     font-size: 80px;
@@ -81,10 +81,10 @@ h3{
     text-align: center;
     font-weight: bold;
     font-size: 40px;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Shadows Into Light';
     color: purple;
 }
-#modal1, #modal2, #modal3 , #modal4, #modal5{
+#modal1, #modal2, #modal3 , #modal4, #modal5, #modal6{
     text-align: center;
 }
 .waves-effect{
