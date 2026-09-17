@@ -46,7 +46,15 @@ body{
     padding-bottom: 50px;  
     font-family: 'Hind Madurai', sans-serif;
   }
-  .container{
+  .ai-container{
+    margin:auto;
+    background-color:rgba(243, 239, 239, 0.217);
+    overflow:hidden;
+    align-items: center;
+    padding:0;  
+    display: block;
+  }
+  .p-container{
     margin:auto;
     background-color:rgba(243, 239, 239, 0.217);
     overflow:hidden;
