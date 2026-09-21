@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { Github, Globe } from "lucide-react";
 import { PROFILE } from "@/data/portfolio";
 
 const Footer = () => (
@@ -10,16 +10,28 @@ const Footer = () => (
                     © 2026 — Designed & built with React
                 </p>
             </div>
-            <a
-                data-testid="footer-repo-link"
-                href={PROFILE.repo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-2.5 font-mono-jb text-[11px] uppercase tracking-[0.2em] text-slate-500 hover:text-blue-400 transition-colors duration-300"
-            >
-                <Github size={14} />
-                This site's source on GitHub
-            </a>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
+                <a
+                    data-testid="footer-portfolio-link"
+                    href={PROFILE.portfolioSite}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-2.5 font-mono-jb text-[11px] uppercase tracking-[0.2em] text-slate-500 hover:text-blue-400 transition-colors duration-300"
+                >
+                    <Globe size={14} />
+                    kylafitzpatrick.github.io/KylaFitzpatrick
+                </a>
+                <a
+                    data-testid="footer-repo-link"
+                    href={PROFILE.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-2.5 font-mono-jb text-[11px] uppercase tracking-[0.2em] text-slate-500 hover:text-blue-400 transition-colors duration-300"
+                >
+                    <Github size={14} />
+                    Source on GitHub
+                </a>
+            </div>
         </div>
     </footer>
 );

@@ -25,7 +25,15 @@ Build a professional portfolio to showcase websites the user has built. Cards di
 - Real site screenshots captured live, optimized to webp in `/app/frontend/public/assets/`
 - Fonts: Syne (display), Manrope (body), JetBrains Mono (labels)
 
-## Implemented (2026-07-21... actually 2026-09-21)
+## Implemented (2026-09-21, update 2)
+- Real resume integrated: uploaded PDF served at /KylaFitzpatrick_Resume.pdf with a working Download PDF button in the resume modal (plus Print)
+- Resume modal rewritten from the actual PDF: Software Engineer title, 8 yrs QA/engineering, phone 704.748.3653, portfolio URL, 8 real roles (Walmart Global Tech → CITCO), real education (UT Austin bootcamp, UNC Charlotte BS)
+- Skills grid rebuilt from resume: Languages & Frameworks, Testing & Platforms (Cypress/TestCafe/Selenium/Docker/AWS...), AI & Design Craft (Emergent, Claude, Adobe Photoshop/Express highlighted)
+- Hero stats updated with real data (08+ years in software engineering)
+- Footer links to https://kylafitzpatrick.github.io/KylaFitzpatrick/ + source repo github.com/KylaFitzpatrick/KylaFitzpatrick
+- Verified: PDF serves 200 application/pdf, resume modal scrolls through all roles, download href correct, footer links render
+
+## Implemented (2026-09-21, initial)
 - Kinetic hero: masked line-by-line reveal, mouse-follow parallax orb + scroll parallax, availability badge, stats row
 - Slow editorial marquee (pause on hover)
 - Selected Work: browser-chrome cards w/ spotlight cursor hover, LIVE badges, tech chips, quick-view preview modal, visit-site + GitHub links
@@ -37,12 +45,11 @@ Build a professional portfolio to showcase websites the user has built. Cards di
 - Verified end-to-end: hero load, scroll nav, preview modal open/close, resume modal open/close, contact section, backend /api/ health
 
 ## Backlog / Next
-- P0: Replace draft resume content with Kyla's real resume (upload PDF to embed/download; fill real experience & education)
-- P1: Point each project's GitHub button + footer source link at exact repos (currently her GitHub profile / pages repo)
 - P1: Recruiter contact form with email delivery (Resend)
+- P1: Custom domain / deploy to kylafitzpatrick.github.io or a custom domain
 - P2: Case-study pages per project (process, stack, results)
 - P2: Light/dark toggle, blog/writing section, testimonials
 
 ## Notes
 - No authentication; no test credentials needed.
-- Resume content is a best-effort draft derived from her GitHub/live sites — user should review.
+- Resume content now matches the uploaded PDF exactly; PDF is in /app/frontend/public/KylaFitzpatrick_Resume.pdf.

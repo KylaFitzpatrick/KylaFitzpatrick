@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Printer, Mail, Linkedin, Github } from "lucide-react";
-import { PROFILE, PROJECTS, SKILL_GROUPS } from "@/data/portfolio";
+import { X, Printer, Mail, Linkedin, Github, Download, Phone, Globe } from "lucide-react";
+import { PROFILE, PROJECTS, SKILL_GROUPS, EXPERIENCE, EDUCATION } from "@/data/portfolio";
 import { lenisStore } from "@/lib/scroll";
 
 const Row = ({ label, children }) => (
@@ -47,13 +47,22 @@ const ResumeModal = ({ open, onClose }) => {
                                 Resume — {PROFILE.name}
                             </span>
                             <div className="flex items-center gap-2.5">
-                                <button
+                                <a
                                     data-testid="resume-download-button"
-                                    onClick={() => window.print()}
+                                    href={PROFILE.resumePdf}
+                                    download="KylaFitzpatrick_Resume.pdf"
                                     className="flex items-center gap-2 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-full px-4 py-2 transition-colors duration-300"
                                 >
+                                    <Download size={13} />
+                                    Download PDF
+                                </a>
+                                <button
+                                    data-testid="resume-print-button"
+                                    onClick={() => window.print()}
+                                    className="flex items-center gap-2 text-xs font-semibold text-slate-200 border border-white/15 hover:border-blue-500/50 rounded-full px-4 py-2 transition-colors duration-300"
+                                >
                                     <Printer size={13} />
-                                    Print / Save PDF
+                                    Print
                                 </button>
                                 <button
                                     data-testid="resume-close-button"
@@ -71,21 +80,23 @@ const ResumeModal = ({ open, onClose }) => {
                                 {PROFILE.name}
                             </h2>
                             <p className="mt-1 font-display font-bold text-lg text-blue-400">
-                                {PROFILE.role} — {PROFILE.tagline}
+                                Software Engineer — 8 years in QA & engineering
                             </p>
                             <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 font-mono-jb text-[11px] text-slate-400">
+                                <span className="flex items-center gap-1.5"><Phone size={12} className="text-blue-400" />{PROFILE.phone}</span>
                                 <span className="flex items-center gap-1.5"><Mail size={12} className="text-blue-400" />{PROFILE.email}</span>
-                                <span className="flex items-center gap-1.5"><Linkedin size={12} className="text-blue-400" />linkedin.com/in/kylaannefitzpatrick</span>
                                 <span className="flex items-center gap-1.5"><Github size={12} className="text-blue-400" />github.com/KylaFitzpatrick</span>
+                                <span className="flex items-center gap-1.5"><Linkedin size={12} className="text-blue-400" />linkedin.com/in/kylaannefitzpatrick</span>
+                                <span className="flex items-center gap-1.5"><Globe size={12} className="text-blue-400" />kylafitzpatrick.github.io/KylaFitzpatrick</span>
                             </div>
 
                             <div className="mt-8">
                                 <Row label="Summary">
                                     <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                                        Web developer who designs and ships fast, modern, production-ready websites end to end —
-                                        from wellness platforms and art e-commerce to local business storefronts. Pairs a modern
-                                        React stack with an AI-augmented workflow (Emergent, Claude) and Adobe design tooling to
-                                        deliver polished, client-facing products quickly.
+                                        Software engineer leveraging 8 years of experience in QA and collaboration in engineering
+                                        environments — currently Software Engineer III at Walmart Global Tech. Also designs and ships
+                                        fast, modern, production-ready websites end to end, pairing a modern React stack with an
+                                        AI-augmented workflow (Emergent, Claude) and Adobe design tooling.
                                     </p>
                                 </Row>
 
@@ -117,22 +128,39 @@ const ResumeModal = ({ open, onClose }) => {
                                 </Row>
 
                                 <Row label="Experience">
-                                    <div>
-                                        <span className="font-display font-bold text-slate-100">Web Developer — Independent & Client Work</span>
-                                        <p className="mt-1 text-sm text-slate-400 leading-relaxed">
-                                            Full design-to-deploy ownership of production websites: discovery, UI/UX, development,
-                                            launch and iteration. Three live client-facing builds showcased above.
-                                        </p>
+                                    <div className="space-y-6">
+                                        {EXPERIENCE.map((e) => (
+                                            <div key={`${e.company}-${e.when}`}>
+                                                <div className="flex flex-wrap items-baseline justify-between gap-x-4">
+                                                    <span className="font-display font-bold text-slate-100">
+                                                        {e.role} <span className="text-blue-400">— {e.company}</span>
+                                                    </span>
+                                                    <span className="font-mono-jb text-[10px] uppercase tracking-[0.15em] text-slate-500">
+                                                        {e.where} · {e.when}
+                                                    </span>
+                                                </div>
+                                                <ul className="mt-1.5 space-y-1">
+                                                    {e.points.map((p) => (
+                                                        <li key={p} className="text-sm text-slate-400 leading-relaxed flex gap-2">
+                                                            <span className="text-blue-500 mt-[2px]">▸</span>
+                                                            {p}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        ))}
                                     </div>
                                 </Row>
 
                                 <Row label="Education">
-                                    <div>
-                                        <span className="font-display font-bold text-slate-100">Full-Stack Web Development — Coding Boot Camp Certificate</span>
-                                        <p className="mt-1 text-sm text-slate-400 leading-relaxed">
-                                            Intensive full-stack program covering JavaScript, React, Node.js and databases.
-                                            Continuing practice in AI-assisted development with Emergent and Claude.
-                                        </p>
+                                    <div className="space-y-4">
+                                        {EDUCATION.map((e) => (
+                                            <div key={e.title}>
+                                                <span className="font-display font-bold text-slate-100">{e.title}</span>
+                                                <p className="mt-0.5 text-sm text-slate-400">{e.school}</p>
+                                                {e.note && <p className="mt-0.5 text-sm text-slate-500">{e.note}</p>}
+                                            </div>
+                                        ))}
                                     </div>
                                 </Row>
                             </div>

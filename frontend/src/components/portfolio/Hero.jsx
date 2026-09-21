@@ -18,8 +18,8 @@ const fadeUp = {
 
 const STATS = [
     { k: "03", v: "Production websites live" },
+    { k: "08+", v: "Years in software engineering" },
     { k: "10x", v: "AI-augmented workflow" },
-    { k: "100%", v: "Design-to-deploy ownership" },
 ];
 
 const Hero = ({ onResume }) => {
