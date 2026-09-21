@@ -25,6 +25,11 @@ Build a professional portfolio to showcase websites the user has built. Cards di
 - Real site screenshots captured live, optimized to webp in `/app/frontend/public/assets/`
 - Fonts: Syne (display), Manrope (body), JetBrains Mono (labels)
 
+## Implemented (2026-09-21, update 3 — GitHub Pages prep)
+- Production build verified with PUBLIC_URL=/KylaFitzpatrick (assets, resume PDF, favicons, .nojekyll all in build/)
+- Added /app/.github/workflows/deploy-pages.yml — auto-builds frontend and deploys to GitHub Pages on every push to main
+- User steps: Save to GitHub (repo KylaFitzpatrick/KylaFitzpatrick, branch main), then GitHub repo Settings → Pages → Source = "GitHub Actions". Site then lives at https://kylafitzpatrick.github.io/KylaFitzpatrick/ (replaces old portfolio there)
+
 ## Implemented (2026-09-21, update 2)
 - Real resume integrated: uploaded PDF served at /KylaFitzpatrick_Resume.pdf with a working Download PDF button in the resume modal (plus Print)
 - Resume modal rewritten from the actual PDF: Software Engineer title, 8 yrs QA/engineering, phone 704.748.3653, portfolio URL, 8 real roles (Walmart Global Tech → CITCO), real education (UT Austin bootcamp, UNC Charlotte BS)

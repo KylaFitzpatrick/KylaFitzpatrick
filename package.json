@@ -1,0 +1,11 @@
+{
+  "homepage": "https://kylafitzpatrick.github.io/KylaFitzpatrick",
+  "scripts": {
+    "build": "cd frontend && npm run build && rm -rf ../build && cp -R build ../build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
