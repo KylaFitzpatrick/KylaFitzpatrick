@@ -1,3 +1,5 @@
+const BASE = process.env.PUBLIC_URL || "";
+
 export const PROFILE = {
     name: "Kyla Fitzpatrick",
     role: "Web Developer",
@@ -7,7 +9,7 @@ export const PROFILE = {
     linkedin: "https://www.linkedin.com/in/kylaannefitzpatrick",
     github: "https://github.com/KylaFitzpatrick",
     repo: "https://github.com/KylaFitzpatrick/KylaFitzpatrick",
-    resumePdf: "/KylaFitzpatrick_Resume.pdf",
+    resumePdf: `${BASE}/KylaFitzpatrick_Resume.pdf`,
 };
 
 export const PROJECTS = [
@@ -20,7 +22,7 @@ export const PROJECTS = [
         description:
             "A social wellness community for mind, body and soul — journaling with an AI Ayurvedic guide, dosha-matched yoga flows, meditations and a shared ritual feed. Shipped with iOS & Android app onboarding.",
         tech: ["React", "Tailwind CSS", "AI Integration", "Mobile-First"],
-        image: "/assets/chillflows.webp",
+        image: `${BASE}/assets/chillflows.webp`,
     },
     {
         id: "gracreation",
@@ -31,7 +33,7 @@ export const PROJECTS = [
         description:
             "An independent Irish atelier for music, photography and visual artwork — artist accounts, a shoppable collection, watermarking and hand-released pieces sold directly from the artist.",
         tech: ["React", "E-Commerce", "Authentication", "Digital Assets"],
-        image: "/assets/gracreation.webp",
+        image: `${BASE}/assets/gracreation.webp`,
     },
     {
         id: "bloomerslkn",
@@ -42,7 +44,7 @@ export const PROJECTS = [
         description:
             "A warm, conversion-focused site for a woman-owned plantscape design & installation studio in Lake Norman — services, project gallery and a consult inquiry flow that turns visitors into clients.",
         tech: ["React", "Lead Capture", "Gallery System", "SEO"],
-        image: "/assets/bloomerslkn.webp",
+        image: `${BASE}/assets/bloomerslkn.webp`,
     },
 ];
 
