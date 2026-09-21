@@ -11,9 +11,9 @@ GRAY = HexColor("#4B5563")
 LIGHT = HexColor("#6B7280")
 
 styles = {
-    "name": ParagraphStyle("name", fontName="Helvetica-Bold", fontSize=24, textColor=DARK, spaceAfter=2),
-    "title": ParagraphStyle("title", fontName="Helvetica-Bold", fontSize=12, textColor=EMERALD, spaceAfter=6),
-    "contact": ParagraphStyle("contact", fontName="Helvetica", fontSize=8.5, textColor=GRAY, spaceAfter=4),
+    "name": ParagraphStyle("name", fontName="Helvetica-Bold", fontSize=24, leading=29, textColor=DARK, spaceAfter=4),
+    "title": ParagraphStyle("title", fontName="Helvetica-Bold", fontSize=12, leading=15, textColor=EMERALD, spaceAfter=8),
+    "contact": ParagraphStyle("contact", fontName="Helvetica", fontSize=8.5, leading=11.5, textColor=GRAY, spaceAfter=4),
     "section": ParagraphStyle("section", fontName="Helvetica-Bold", fontSize=10.5, textColor=EMERALD, spaceBefore=14, spaceAfter=2),
     "body": ParagraphStyle("body", fontName="Helvetica", fontSize=9.5, textColor=DARK, leading=13.5, alignment=TA_LEFT),
     "role": ParagraphStyle("role", fontName="Helvetica-Bold", fontSize=10, textColor=DARK, leading=13),
