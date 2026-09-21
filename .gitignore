@@ -81,7 +81,7 @@ memory/test_credentials.md
 # Mobile development
 android-sdk/
 
-# overlay black-box crash/user-report dumps — session data, never history
+# local crash/user-report dumps — session data, never history
 **/.emergent/recordings/
 .env
 .env.*
@@ -89,3 +89,11 @@ android-sdk/
 credentials.json
 *.key
 .credentials
+
+# Local workspace files (not for public repo)
+.emergent/
+memory/
+test_reports/
+test_result.md
+design_guidelines.json
+.gitconfig
