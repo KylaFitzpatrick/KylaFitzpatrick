@@ -6,7 +6,7 @@ const Marquee = () => {
     return (
         <div
             data-testid="editorial-marquee"
-            className="marquee-wrap relative overflow-hidden border-y border-white/[0.06] bg-[#0A0F1D]/60 py-6 select-none"
+            className="marquee-wrap relative overflow-hidden border-y border-white/[0.06] bg-[#0A110D]/60 py-6 select-none"
         >
             <div className="animate-marquee flex w-max items-center gap-10 pr-10">
                 {items.map((item, i) => (
@@ -14,7 +14,7 @@ const Marquee = () => {
                         <span className="font-display font-bold text-lg sm:text-xl uppercase tracking-wide text-slate-500 whitespace-nowrap">
                             {item}
                         </span>
-                        <Sparkle size={14} className="text-blue-500/70 shrink-0" />
+                        <Sparkle size={14} className="text-emerald-500/70 shrink-0" />
                     </span>
                 ))}
             </div>

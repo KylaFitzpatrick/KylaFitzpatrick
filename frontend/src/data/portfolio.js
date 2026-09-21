@@ -7,7 +7,6 @@ export const PROFILE = {
     linkedin: "https://www.linkedin.com/in/kylaannefitzpatrick",
     github: "https://github.com/KylaFitzpatrick",
     repo: "https://github.com/KylaFitzpatrick/KylaFitzpatrick",
-    portfolioSite: "https://kylafitzpatrick.github.io/KylaFitzpatrick/",
     resumePdf: "/KylaFitzpatrick_Resume.pdf",
 };
 

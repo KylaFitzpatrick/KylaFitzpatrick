@@ -33,7 +33,7 @@ const Navbar = ({ onResume }) => {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
             className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-500 ${
                 scrolled
-                    ? "bg-[#050811]/80 backdrop-blur-xl border-b border-white/[0.06]"
+                    ? "bg-[#060B08]/80 backdrop-blur-xl border-b border-white/[0.06]"
                     : "bg-transparent border-b border-transparent"
             }`}
         >
@@ -43,7 +43,7 @@ const Navbar = ({ onResume }) => {
                     onClick={() => go("#top")}
                     className="flex items-center gap-3 group"
                 >
-                    <span className="font-mono-jb text-xs font-medium w-9 h-9 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 flex items-center justify-center transition-colors duration-300 group-hover:bg-blue-500/20">
+                    <span className="font-mono-jb text-xs font-medium w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center transition-colors duration-300 group-hover:bg-emerald-500/20">
                         KF
                     </span>
                     <span className="font-display font-bold text-sm tracking-wide text-slate-100 hidden sm:block">
@@ -57,7 +57,7 @@ const Navbar = ({ onResume }) => {
                             key={l.id}
                             data-testid={l.testid}
                             onClick={() => go(l.id)}
-                            className="font-mono-jb text-[11px] uppercase tracking-[0.2em] text-slate-400 hover:text-blue-400 transition-colors duration-300"
+                            className="font-mono-jb text-[11px] uppercase tracking-[0.2em] text-slate-400 hover:text-emerald-400 transition-colors duration-300"
                         >
                             {l.label}
                         </button>
@@ -65,7 +65,7 @@ const Navbar = ({ onResume }) => {
                     <button
                         data-testid="nav-resume-button"
                         onClick={onResume}
-                        className="flex items-center gap-2 font-mono-jb text-[11px] uppercase tracking-[0.2em] text-white bg-blue-600 hover:bg-blue-500 px-5 py-2.5 rounded-full transition-colors duration-300 hover:shadow-[0_0_24px_rgba(59,130,246,0.45)]"
+                        className="flex items-center gap-2 font-mono-jb text-[11px] uppercase tracking-[0.2em] text-white bg-emerald-600 hover:bg-emerald-500 px-5 py-2.5 rounded-full transition-colors duration-300 hover:shadow-[0_0_24px_rgba(16,185,129,0.45)]"
                     >
                         <FileText size={13} />
                         Resume
@@ -89,7 +89,7 @@ const Navbar = ({ onResume }) => {
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                        className="md:hidden overflow-hidden bg-[#050811]/95 backdrop-blur-xl border-b border-white/[0.06]"
+                        className="md:hidden overflow-hidden bg-[#060B08]/95 backdrop-blur-xl border-b border-white/[0.06]"
                     >
                         <div className="px-6 py-6 flex flex-col gap-5">
                             {LINKS.map((l) => (
@@ -97,7 +97,7 @@ const Navbar = ({ onResume }) => {
                                     key={l.id}
                                     data-testid={`mobile-${l.testid}`}
                                     onClick={() => go(l.id)}
-                                    className="text-left font-mono-jb text-xs uppercase tracking-[0.2em] text-slate-300 hover:text-blue-400 transition-colors duration-300"
+                                    className="text-left font-mono-jb text-xs uppercase tracking-[0.2em] text-slate-300 hover:text-emerald-400 transition-colors duration-300"
                                 >
                                     {l.label}
                                 </button>
@@ -108,7 +108,7 @@ const Navbar = ({ onResume }) => {
                                     setOpen(false);
                                     onResume();
                                 }}
-                                className="flex items-center gap-2 font-mono-jb text-xs uppercase tracking-[0.2em] text-blue-400"
+                                className="flex items-center gap-2 font-mono-jb text-xs uppercase tracking-[0.2em] text-emerald-400"
                             >
                                 <FileText size={14} /> Resume
                             </button>

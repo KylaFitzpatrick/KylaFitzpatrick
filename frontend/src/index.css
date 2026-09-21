@@ -4,25 +4,25 @@
 
 @layer base {
     :root {
-        --background: 222 47% 5%;
+        --background: 150 30% 4%;
         --foreground: 210 40% 98%;
-        --card: 222 47% 9%;
+        --card: 152 25% 7%;
         --card-foreground: 210 40% 98%;
-        --popover: 222 47% 7%;
+        --popover: 152 25% 6%;
         --popover-foreground: 210 40% 98%;
-        --primary: 217 91% 60%;
+        --primary: 160 84% 39%;
         --primary-foreground: 210 40% 98%;
-        --secondary: 217 33% 15%;
+        --secondary: 155 20% 12%;
         --secondary-foreground: 210 40% 98%;
-        --muted: 217 33% 15%;
+        --muted: 155 20% 12%;
         --muted-foreground: 215 20% 65%;
-        --accent: 217 33% 17%;
+        --accent: 155 22% 14%;
         --accent-foreground: 210 40% 98%;
         --destructive: 0 63% 45%;
         --destructive-foreground: 210 40% 98%;
-        --border: 217 33% 16%;
-        --input: 217 33% 16%;
-        --ring: 217 91% 60%;
+        --border: 155 18% 14%;
+        --input: 155 18% 14%;
+        --ring: 160 84% 39%;
         --radius: 0.75rem;
     }
     * {
@@ -30,29 +30,29 @@
     }
     body {
         @apply text-foreground;
-        background: #050811;
+        background: #060B08;
         font-family: "Manrope", system-ui, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         overflow-x: hidden;
     }
     ::selection {
-        background: rgba(59, 130, 246, 0.45);
+        background: rgba(16,185,129, 0.45);
         color: #f8fafc;
     }
     ::-webkit-scrollbar {
         width: 10px;
     }
     ::-webkit-scrollbar-track {
-        background: #050811;
+        background: #060B08;
     }
     ::-webkit-scrollbar-thumb {
         background: #1e293b;
         border-radius: 8px;
-        border: 2px solid #050811;
+        border: 2px solid #060B08;
     }
     ::-webkit-scrollbar-thumb:hover {
-        background: #3b82f6;
+        background: #10b981;
     }
 }
 
@@ -70,7 +70,7 @@
 }
 
 .text-stroke-blue {
-    -webkit-text-stroke: 1.5px rgba(96, 165, 250, 0.85);
+    -webkit-text-stroke: 1.5px rgba(52,211,153, 0.85);
     color: transparent;
 }
 
@@ -85,8 +85,8 @@
 
 .hero-grid {
     background-image:
-        linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+        linear-gradient(rgba(16,185,129, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(16,185,129, 0.05) 1px, transparent 1px);
     background-size: 72px 72px;
     mask-image: radial-gradient(ellipse 90% 70% at 50% 40%, black 30%, transparent 75%);
     -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 40%, black 30%, transparent 75%);
@@ -141,7 +141,7 @@
     border-radius: inherit;
     background: radial-gradient(
         480px circle at var(--spot-x, 50%) var(--spot-y, 50%),
-        rgba(59, 130, 246, 0.14),
+        rgba(16,185,129, 0.14),
         transparent 65%
     );
     opacity: 0;

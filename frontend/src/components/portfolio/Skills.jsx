@@ -11,7 +11,7 @@ const Skills = () => (
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 className="mb-14 sm:mb-20"
             >
-                <span className="font-mono-jb text-[11px] uppercase tracking-[0.3em] text-blue-400">
+                <span className="font-mono-jb text-[11px] uppercase tracking-[0.3em] text-emerald-400">
                     03 — Toolbox
                 </span>
                 <h2 className="mt-4 font-display font-bold tracking-tight text-3xl sm:text-5xl text-slate-50 max-w-2xl leading-tight">
@@ -27,9 +27,9 @@ const Skills = () => (
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-60px" }}
                         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: i * 0.12 }}
-                        className="rounded-2xl border border-white/[0.08] bg-[#0F172A]/70 backdrop-blur-md p-7 sm:p-8 transition-colors duration-500 hover:border-blue-500/35"
+                        className="rounded-2xl border border-white/[0.08] bg-[#0F1A13]/70 backdrop-blur-md p-7 sm:p-8 transition-colors duration-500 hover:border-emerald-500/35"
                     >
-                        <span className="font-mono-jb text-[10px] uppercase tracking-[0.25em] text-blue-400">
+                        <span className="font-mono-jb text-[10px] uppercase tracking-[0.25em] text-emerald-400">
                             {String(i + 1).padStart(2, "0")}
                         </span>
                         <h3 className="mt-3 font-display font-bold text-xl text-slate-50">{g.name}</h3>
@@ -40,8 +40,8 @@ const Skills = () => (
                                     data-testid={`skill-chip-${s.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
                                     className={`text-sm font-medium rounded-full px-4 py-2 transition-colors duration-300 ${
                                         g.highlight
-                                            ? "text-blue-200 border border-blue-500/30 bg-blue-500/[0.08] hover:bg-blue-500/[0.16]"
-                                            : "text-slate-300 border border-white/10 bg-white/[0.03] hover:border-blue-500/30"
+                                            ? "text-emerald-200 border border-emerald-500/30 bg-emerald-500/[0.08] hover:bg-emerald-500/[0.16]"
+                                            : "text-slate-300 border border-white/10 bg-white/[0.03] hover:border-emerald-500/30"
                                     }`}
                                 >
                                     {s}

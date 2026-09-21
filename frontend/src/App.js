@@ -35,7 +35,7 @@ function App() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-[#050811] text-slate-100 antialiased">
+        <div className="min-h-screen bg-[#060B08] text-slate-100 antialiased">
             <div className="grain" />
             <Toaster position="bottom-right" theme="dark" />
             <Navbar onResume={openResume} />

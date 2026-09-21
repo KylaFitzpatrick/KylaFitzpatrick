@@ -30,7 +30,9 @@ Build a professional portfolio to showcase websites the user has built. Cards di
 - Resume modal rewritten from the actual PDF: Software Engineer title, 8 yrs QA/engineering, phone 704.748.3653, portfolio URL, 8 real roles (Walmart Global Tech → CITCO), real education (UT Austin bootcamp, UNC Charlotte BS)
 - Skills grid rebuilt from resume: Languages & Frameworks, Testing & Platforms (Cypress/TestCafe/Selenium/Docker/AWS...), AI & Design Craft (Emergent, Claude, Adobe Photoshop/Express highlighted)
 - Hero stats updated with real data (08+ years in software engineering)
-- Footer links to https://kylafitzpatrick.github.io/KylaFitzpatrick/ + source repo github.com/KylaFitzpatrick/KylaFitzpatrick
+- Footer links to source repo github.com/KylaFitzpatrick/KylaFitzpatrick (GitHub Pages URL removed per user request 2026-09-21)
+- Green/black theme (emerald #10B981 family on green-tinted black) — swapped from blue per user request; KF favicon (svg + png) added; responsive verified at 390px/820px/1920px
+- bloomerslkn card screenshot re-captured after landing animation fully loads (Ruby truck + logo visible)
 - Verified: PDF serves 200 application/pdf, resume modal scrolls through all roles, download href correct, footer links render
 
 ## Implemented (2026-09-21, initial)

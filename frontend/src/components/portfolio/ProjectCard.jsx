@@ -17,17 +17,17 @@ const ProjectCard = ({ project, index, featured, onPreview }) => {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1], delay: index * 0.08 }}
             onMouseMove={onMove}
-            className={`spotlight-card group rounded-2xl border border-white/[0.08] bg-[#0F172A]/70 backdrop-blur-md overflow-hidden transition-colors duration-500 hover:border-blue-500/40 ${
+            className={`spotlight-card group rounded-2xl border border-white/[0.08] bg-[#0F1A13]/70 backdrop-blur-md overflow-hidden transition-colors duration-500 hover:border-emerald-500/40 ${
                 featured ? "md:col-span-2 md:grid md:grid-cols-2" : ""
             }`}
         >
             <div className={featured ? "" : ""}>
-                <div className="flex items-center gap-2 px-4 py-3 border-b border-white/[0.06] bg-[#0A0F1D]/80">
+                <div className="flex items-center gap-2 px-4 py-3 border-b border-white/[0.06] bg-[#0A110D]/80">
                     <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]/70" />
                     <span className="w-2.5 h-2.5 rounded-full bg-[#FEBC2E]/70" />
                     <span className="w-2.5 h-2.5 rounded-full bg-[#28C840]/70" />
                     <span className="ml-3 flex items-center gap-1.5 font-mono-jb text-[10px] text-slate-500 bg-white/[0.04] rounded-md px-2.5 py-1">
-                        <Globe size={10} className="text-blue-400" />
+                        <Globe size={10} className="text-emerald-400" />
                         {project.domain}
                     </span>
                     <span className="ml-auto flex items-center gap-1.5 font-mono-jb text-[9px] uppercase tracking-[0.15em] text-emerald-400">
@@ -54,7 +54,7 @@ const ProjectCard = ({ project, index, featured, onPreview }) => {
             <div className="relative z-[2] p-6 sm:p-8 flex flex-col">
                 <div className="flex items-start justify-between gap-4">
                     <div>
-                        <span className="font-mono-jb text-[10px] uppercase tracking-[0.25em] text-blue-400">
+                        <span className="font-mono-jb text-[10px] uppercase tracking-[0.25em] text-emerald-400">
                             {String(index + 1).padStart(2, "0")} — {project.tag}
                         </span>
                         <h3 className="mt-2 font-display font-bold text-xl sm:text-2xl text-slate-50">{project.name}</h3>
@@ -62,7 +62,7 @@ const ProjectCard = ({ project, index, featured, onPreview }) => {
                     <button
                         data-testid={`project-quickview-${project.id}`}
                         onClick={() => onPreview(project)}
-                        className="shrink-0 w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:text-blue-400 hover:border-blue-500/50 transition-colors duration-300"
+                        className="shrink-0 w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/50 transition-colors duration-300"
                         aria-label="Quick view"
                     >
                         <ScanSearch size={16} />
@@ -88,7 +88,7 @@ const ProjectCard = ({ project, index, featured, onPreview }) => {
                         href={project.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group/link flex items-center gap-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-full px-5 py-2.5 transition-colors duration-300 hover:shadow-[0_0_24px_rgba(59,130,246,0.45)]"
+                        className="group/link flex items-center gap-2 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-500 rounded-full px-5 py-2.5 transition-colors duration-300 hover:shadow-[0_0_24px_rgba(16,185,129,0.45)]"
                     >
                         Visit site
                         <ArrowUpRight size={15} className="transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
@@ -98,7 +98,7 @@ const ProjectCard = ({ project, index, featured, onPreview }) => {
                         href={PROFILE.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-blue-300 border border-white/10 hover:border-blue-500/40 rounded-full px-5 py-2.5 transition-colors duration-300"
+                        className="flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-emerald-300 border border-white/10 hover:border-emerald-500/40 rounded-full px-5 py-2.5 transition-colors duration-300"
                     >
                         <Github size={15} />
                         GitHub
