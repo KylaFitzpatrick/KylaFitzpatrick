@@ -6,7 +6,7 @@ import { PROFILE } from "@/data/portfolio";
 
 const LINKS = [
     { label: "Work", id: "#work", testid: "nav-link-projects" },
-    { label: "Manifesto", id: "#manifesto", testid: "nav-link-manifesto" },
+    { label: "Process", id: "#process", testid: "nav-link-process" },
     { label: "Skills", id: "#skills", testid: "nav-link-skills" },
     { label: "Contact", id: "#contact", testid: "nav-link-contact" },
 ];
