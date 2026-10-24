@@ -79,12 +79,12 @@ const Hero = ({ onResume }) => {
 
                     <h1 data-testid="hero-heading" className="font-display font-extrabold tracking-tight leading-[0.95] text-slate-50">
                         <span className="block overflow-hidden pb-1">
-                            <motion.span variants={lineUp} className="block text-[8.5vw] sm:text-7xl lg:text-8xl">
+                            <motion.span variants={lineUp} className="block text-[7.5vw] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
                                 KYLA
                             </motion.span>
                         </span>
                         <span className="block overflow-hidden pb-2">
-                            <motion.span variants={lineUp} className="block text-[8.5vw] sm:text-7xl lg:text-8xl text-stroke-blue">
+                            <motion.span variants={lineUp} className="block text-[7.5vw] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-stroke-blue">
                                 FITZPATRICK
                             </motion.span>
                         </span>
